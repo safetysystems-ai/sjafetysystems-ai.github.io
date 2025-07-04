@@ -1,8 +1,8 @@
 
 layout: splash
-title: "Welcome to SafetySystems AI Lab"
+title: "Welcome to Safety Systems AI Lab"
 header:
-  overlay_image: /assets/images/Asset 17.png   # 사용하고 싶은 이미지 경로
+  overlay_image: /assets/images/Asset_17.png   # 사용하고 싶은 이미지 경로
   overlay_filter: 0.2           # 어두운 효과(0~1), 원하면 조정
   actions:
     - label: "Learn More"
