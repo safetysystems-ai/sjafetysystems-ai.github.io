@@ -21,7 +21,7 @@ header:
   
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "SafetySystems AI Lab @ TAMU"
+title                    : "Safety Systems AI Lab | Texas A&M University"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "SafetySystems AI La"
