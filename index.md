@@ -1,4 +1,4 @@
-
+---
 layout: splash
 title: "Welcome to Safety Systems AI Lab"
 header:
