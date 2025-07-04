@@ -1,17 +1,17 @@
 # main links
 # _data/navigation.yml
 main:
-  - title: "About"
-    url: /about/
   - title: "Members"
     url: /members/
   - title: "Projects"
     url: /projects/
-  - title: "Education"
-    url: /education/
   - title: "Publication"
     url: /publication/
-  - title: "Media"
-    url: /media/
   - title: "Contact"
     url: /contact/
+  - title: "Media"
+    url: /media/
+  - title: "Education"
+    url: /education/
+  - title: "About"
+    url: /about/
