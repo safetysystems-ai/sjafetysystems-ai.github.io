@@ -7,14 +7,12 @@ header:
   actions:
     - label: "Learn More"
       url: "/about/"
+  caption: |
+    <span style="font-size:0.95rem; color:#fff;">
+      Director:
+      <a href="https://www.arch.tamu.edu/staff/namgyun-kim/" target="_blank" style="color:#fff; text-decoration:underline;">Namgyun Kim</a>,
+      <a href="https://www.tamu.edu/" target="_blank" style="color:#fff; text-decoration:underline;">Texas A&amp;M University</a>
+    </span>
 ---
 
-<p style="font-size:1.1rem; font-weight:400; margin-bottom:2rem; color:#fff;">
-  Director: 
-  <a href="https://www.arch.tamu.edu/staff/namgyun-kim/" target="_blank" style="color:#fff; text-decoration:underline;">
-    Namgyun Kim
-  </a>, 
-  <a href="https://www.tamu.edu/" target="_blank" style="color:#fff; text-decoration:underline;">
-    Texas A&amp;M University
-  </a>
-</p>
+<!-- 본문에서 Director 부분은 삭제! -->
