@@ -2,7 +2,7 @@
 layout: splash
 title: "AI-Powered Safety Systems Research"
 header:
-  overlay_image: /assets/images/Asset_19.png
+  overlay_image: /assets/images/Asset_22.jpg
   overlay_filter: 0.2
   actions:
     - label: "Learn More"
