@@ -11,10 +11,10 @@ header:
 
 <p style="font-size:1.0rem; font-weight:400; margin-bottom:2rem;">
   Director: 
-  <a href="https://www.arch.tamu.edu/staff/namgyun-kim/" target="_blank"; text-decoration:underline;">
+  <a href="https://www.arch.tamu.edu/staff/namgyun-kim/" target="_blank" style="text-decoration:underline;">
     Namgyun Kim
   </a>, 
-  <a href="https://www.tamu.edu/" target="_blank"; text-decoration:underline;">
+  <a href="https://www.tamu.edu/" target="_blank" style="text-decoration:underline;">
     Texas A&amp;M University
   </a>
 </p>
