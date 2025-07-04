@@ -2,17 +2,19 @@
 layout: splash
 title: "AI-Powered Safety Systems Research"
 header:
-  overlay_image: /assets/images/Asset_18.png
+  overlay_image: /assets/images/Asset_19.png
   overlay_filter: 0.2
   actions:
     - label: "Learn More"
       url: "/about/"
-  caption: |
-    <span style="font-size:0.95rem; color:#fff;">
-      Director:
-      <a href="https://www.arch.tamu.edu/staff/namgyun-kim/" target="_blank" style="color:#fff; text-decoration:underline;">Namgyun Kim</a>,
-      <a href="https://www.tamu.edu/" target="_blank" style="color:#fff; text-decoration:underline;">Texas A&amp;M University</a>
-    </span>
 ---
 
-<!-- 본문에서 Director 부분은 삭제! -->
+<p style="font-size:1.0rem; font-weight:400; margin-bottom:2rem;">
+  Director: 
+  <a href="https://www.arch.tamu.edu/staff/namgyun-kim/" target="_blank"; text-decoration:underline;">
+    Namgyun Kim
+  </a>, 
+  <a href="https://www.tamu.edu/" target="_blank"; text-decoration:underline;">
+    Texas A&amp;M University
+  </a>
+</p>
