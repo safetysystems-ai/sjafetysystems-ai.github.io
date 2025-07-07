@@ -1,9 +1,10 @@
 ---
-layout: page
-title: "Project B"
-permalink: /projects/project-b/
-image: /assets/images/Blank.png
-summary: "AI-driven construction safety analytics."
+title: "Data Science Course Development"
+image: /assets/images/TAMIDS.png
+summary: "AI-Enabled Human Factors Research in Construction"
+start: 2025.05.01
+end: 2026.12.31
+layout: project
 ---
 
 ![Project B]({{ page.image }})
