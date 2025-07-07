@@ -15,7 +15,6 @@ permalink: /projects/
   margin-left: -50vw;
   margin-right: -50vw;
   padding: 60px 0 80px 0;
-  text-decoration: none;
 }
 
 .project-inner-container {
@@ -38,7 +37,6 @@ permalink: /projects/
   box-shadow: 0 4px 18px #e0e0e0;
   transition: box-shadow .17s, transform .11s;
   display: block;
-  text-decoration: none;
   color: inherit;
   margin-bottom: 24px;
   overflow: hidden;
@@ -63,7 +61,6 @@ permalink: /projects/
   margin-bottom: 8px;
   color: #171c36;
   line-height: 1.25;
-  text-decoration: none;
 }
 .project-summary {
   font-size: 0.97em;
@@ -98,14 +95,14 @@ permalink: /projects/
     <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
       Project in progress
     </h2>
-    <div style="width:44px; border-bottom:3px solid #212349; margin-bottom:38px; margin-left:3px;"></div>
+    <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid">
       {% for project in site.projects %}
         <a href="{{ project.url }}" class="project-card">
           <img src="{{ project.image }}" alt="{{ project.title }}" class="project-card-img">
           <div class="project-card-content">
             <div class="project-title">{{ project.title | truncate: 44 }}</div>
-            <div style="border-bottom:2px solid #222; width:36px; margin-bottom:14px;"></div>
+            <div style="width:36px; margin-bottom:14px;"></div>
             <div class="project-summary">{{ project.summary | truncate: 96 }}</div>
             <div class="project-date">
               <svg width="17" height="17" fill="#999" viewBox="0 0 20 20" style="margin-right:4px;vertical-align:middle;">
