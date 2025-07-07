@@ -1,9 +1,10 @@
 ---
-layout: page
-title: "Project A"
-permalink: /projects/project-a/
+title: "AI and AR for Safety Training"
 image: /assets/images/Blank.png
 summary: "Worksite-specific Safety Training Environments with Augmented Reality"
+start: 2023.06.15
+end: 2026.05.31
+layout: project
 ---
 
 ![Project A]({{ page.image }})
