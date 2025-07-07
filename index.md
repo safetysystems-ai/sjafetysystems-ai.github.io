@@ -13,6 +13,12 @@ excerpt: "Safety Systems AI (SSAI) Lab"
 ---
 
 <style>
+.project-card,
+.project-card *,
+.project-card a {
+  text-decoration: none;
+}
+
 .project-section-bg {
   background: #f5f6f7;
   min-height: 100vh;
