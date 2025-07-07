@@ -31,6 +31,7 @@ permalink: /members/
 
 <div style="margin-left: 60px;">
 ## Director
+</div>
 
 <!-- Faculty loop -->
 {% for m in site.data.members.faculty %}
@@ -67,6 +68,7 @@ permalink: /members/
 
 <div style="margin-left: 60px;">
 ## Legacy of Graduated PhDs and Postdocs
+</div>
 
 <div style="display:flex; flex-wrap: wrap;">
 {% for p in site.data.members.phds_postdocs %}
@@ -86,6 +88,7 @@ permalink: /members/
 
 <div style="margin-left: 60px;">
 ## Current Members
+</div>
 
 <div style="display:flex; flex-wrap: wrap;">
 {% for c in site.data.members.current %}
