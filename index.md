@@ -106,6 +106,9 @@ excerpt: "Safety Systems AI (SSAI) Lab"
   .project-inner-container { max-width: 95vw; }
   .project-card { width: 96vw; max-width: 380px;}
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>
 
 <!-- Projects Section (Main Page) -->
@@ -136,6 +139,37 @@ excerpt: "Safety Systems AI (SSAI) Lab"
     </div>
     <div style="text-align:center; margin-top:30px;">
       <a href="/projects/" style="color:#222; font-weight:600; font-size:1.05em; text-decoration:underline;">View all projects</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Us Section -->
+<div id="contact" style="background:#f8f8fa; padding:64px 0 80px 0; margin-top:60px;">
+  <div style="max-width:600px; margin:0 auto; text-align:center;">
+    <h2 style="font-size:2em; font-weight:700; margin-bottom:14px;">Contact Us</h2>
+    <div style="font-size:1.07em; color:#333; margin-bottom:28px;">
+      Have questions? Interested in collaboration?<br>
+      Reach out to us below!
+    </div>
+    <div style="margin-bottom:18px;">
+      <strong>Email:</strong>
+      <a href="mailto:ssai-lab@yedu" style="color:#2a2a8c; font-weight:500;">ssailab@youremail.edu</a>
+    </div>
+    <div style="margin-bottom:18px;">
+      <strong>Address:454 Throckmorton St.</strong>
+      <span>Texas A&M University, College Station, TX 77843</span>
+    </div>
+    <div style="margin: 30px 0;">
+      <iframe
+        src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.3265252776173!2d-96.34143144218953!3d30.61550314807618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86468399d9df49cb%3A0x9841ee504f247ca6!2sNagle%20Hall%2C%20454%20Throckmorton%20St%2C%20College%20Station%2C%20TX%2077843!5e0!3m2!1sen!2sus!4v1751918635059!5m2!1sen!2sus"
+        width="100%"
+        height="300"
+        style="border:0; border-radius: 14px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </div>
 </div>
