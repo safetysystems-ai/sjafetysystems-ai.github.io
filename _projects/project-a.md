@@ -3,7 +3,7 @@ layout: page
 title: "Project A"
 permalink: /projects/project-a/
 image: /assets/images/Blank.png
-summary: "AI-driven construction safety analytics."
+summary: "Worksite-specific Safety Training Environments with Augmented Reality"
 ---
 
 ![Project A]({{ page.image }})
