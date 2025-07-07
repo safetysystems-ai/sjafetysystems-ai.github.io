@@ -3,12 +3,15 @@
 faculty:
   - name: "Namgyun Kim, PhD., PMP"
     title: "Director"
-    image: "/assets/images/NK_Headshot.jpg"
+    image: "/assets/images/NK_Headshot.png"
     positions:
       - "Assistant Professor"
       - "Department of Construction Science"
 
-    education: "Accelerated Evaluation of Automated Vehicles, University of Michigan (advised by Huei Peng)"
+    education: 
+      - "PhD in Construction Science, Texas A&M University"
+      - "MS in Architectural Engineering, Sungkyunkwan University"
+      - "BS in Architectural Engineering, Konkuk University"
     awards:
       - "Best Paper Award in Safety and Health Track, ASCE Construction Research Congress 2024"
       - "Outstanding Junior Faculty Award, Korean American Construction Engineering and Project Management Association (KACEPMA)"
@@ -19,7 +22,7 @@ faculty:
     website: "https://https://www.arch.tamu.edu/staff/namgyun-kim/"
 
 phds_postdocs:
-  - name: "Yan"
+  - name: "N"
     title: "Principal Engineer, NVIDIA"
     image: "/assets/images/yanchang.jpg"
     description: "Building foundation models, data pipelines, and simulation workflows for humanoid robots"
@@ -29,6 +32,6 @@ phds_postdocs:
 Current Members:
   - name: "Jinsol Lee, PhD."
     title: "Postdoctoral Researcher"
-    image: "/assets/images/yao.jpg"
-    description: "Safety of Robotic Foundation Models"
+    image: "/assets/images/Blan.png"
+    description: "-"
   # ... add new members
