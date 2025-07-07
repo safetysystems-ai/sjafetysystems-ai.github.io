@@ -105,11 +105,16 @@ h2.section-title {
       </div>
     {% endif %}
 
-    {% if m.linkedin %}
-      <a href="{{ m.linkedin }}" target="_blank">LinkedIn</a>
-    {% endif %}
+  <div style="margin-top:12px;">
     {% if m.website %}
-      | <a href="{{ m.website }}" target="_blank">Website</a>
+      <a href="{{ m.website }}" target="_blank" title="Website" style="color:#222; display:inline-block; margin-right:8px;">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><circle cx="10" cy="10" r="8"/><line x1="2" y1="10" x2="18" y2="10"/><path d="M10 2a13 13 0 0 1 0 16M10 2a13 13 0 0 0 0 16"/></svg>
+      </a>
+    {% endif %}
+    {% if m.linkedin %}
+      <a href="{{ m.linkedin }}" target="_blank" title="LinkedIn" style="color:#0077b5; display:inline-block;">
+        <svg width="20" height="20" fill="currentColor" style="vertical-align:middle;" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.12 108 0 83.87 0 54.89A53.34 53.34 0 0 1 53.67 1.5c29.66 0 53.67 24.09 53.67 53.39 0 28.98-24.01 53.11-53.67 53.11zm394.84 340h-92.4V302.4c0-34.7-.7-79.29-48.32-79.29-48.38 0-55.78 37.78-55.78 76.87V448H160V148.9h88.56v40.81h1.28c12.36-23.38 42.56-48.32 87.56-48.32 93.68 0 110.92 61.73 110.92 142.3V448z"/></svg>
+      </a>
     {% endif %}
   </div>
 </div>
