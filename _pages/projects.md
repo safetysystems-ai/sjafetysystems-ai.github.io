@@ -98,7 +98,7 @@ permalink: /projects/
 <div class="project-section-bg">
   <div class="project-inner-container">
     <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
-      Project in progress
+      Project in Progress
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid">
