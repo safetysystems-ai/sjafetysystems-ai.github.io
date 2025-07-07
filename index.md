@@ -63,8 +63,8 @@ excerpt: "Safety Systems AI (SSAI) Lab"
   transform: translateY(-4px) scale(1.025);
 }
 .project-card-img {
-  width: 90%;
-  height: 100px;
+  width: 100%;
+  height: 120px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
   background: #f7f7f7; /* Optional: subtle bg for transparent logos */
