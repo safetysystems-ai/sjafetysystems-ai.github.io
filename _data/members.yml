@@ -30,6 +30,12 @@ phds_postdocs:
 current:
   - name: "Jinsol Lee, PhD."
     title: "Postdoctoral Researcher"
-    image: "/assets/images/Blan.png"
-    description: ""
+    image: "/assets/images/Blank.png"
+    website: "https://scholar.google.com/citations?user=RvdJPIYAAAAJ&hl=ko"
+
+  - name: "Jaehoon Lee, PhD Student."
+    title: "Postdoctoral Researcher"
+    image: "/assets/images/Blank.png"
+    website: "https://scholar.google.com/citations?user=RvdJPIYAAAAJ&hl=ko"
+    
   # ... 추가
