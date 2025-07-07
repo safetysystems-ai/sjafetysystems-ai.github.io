@@ -69,7 +69,6 @@ h2.section-title {
 ---
 
 <h2 class="section-title">Current Members</h2>
-<h2 class="section-title">Current Members</h2>
 <div style="margin-left:60px;">
   <div style="display: flex; flex-wrap: wrap; gap: 32px;">
     {% for c in site.data.members.current %}
