@@ -1,6 +1,6 @@
 ---
 title: "AI and AR for Safety Training"
-image: /assets/images/Blank.png
+image: /assets/images/NSF.png
 summary: "Worksite-specific Safety Training Environments with Augmented Reality"
 start: 2023.06.15
 end: 2026.05.31
