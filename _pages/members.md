@@ -63,8 +63,8 @@ h2.section-title {
 
     {% if m.positions %}
       <div style="margin-bottom:10px;">
-        <strong>Position(s):</strong>
-        <ul>
+        <!--  <strong>Position(s):</strong> -->
+        <!-- <ul>  -->
         {% for pos in m.positions %}
           <li>{{ pos }}</li>
         {% endfor %}
