@@ -21,20 +21,28 @@ permalink: /projects/
   margin-right: -50vw;
   padding: 60px 0 80px 0;
 }
-
+.project-section-bg-completed {
+  background: #faf9f8;
+  min-height: 60vh;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 60px 0 80px 0;
+}
 .project-inner-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 32px;
 }
-
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
   justify-content: flex-start;
 }
-
 .project-card {
   width: 320px;
   background: #fff;
@@ -95,6 +103,7 @@ permalink: /projects/
 }
 </style>
 
+<!-- Project in Progress Section -->
 <div class="project-section-bg">
   <div class="project-inner-container">
     <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
@@ -102,7 +111,8 @@ permalink: /projects/
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid">
-      {% for project in site.projects %}
+      {% assign ongoing_projects = site.projects | where: "status", "ongoing" %}
+      {% for project in ongoing_projects %}
         <a href="{{ project.url }}" class="project-card">
           <img src="{{ project.image }}" alt="{{ project.title }}" class="project-card-img">
           <div class="project-card-content">
@@ -122,3 +132,34 @@ permalink: /projects/
     </div>
   </div>
 </div>
+
+<!-- Completed Projects Section -->
+<div class="project-section-bg-completed">
+  <div class="project-inner-container">
+    <h2 style="font-size:1.7em; font-weight:700; margin-bottom:18px; margin-left:3px;">
+      Completed Projects
+    </h2>
+    <div style="margin-bottom:38px; margin-left:3px;"></div>
+    <div class="project-grid">
+      {% assign completed_projects = site.projects | where: "status", "completed" %}
+      {% for project in completed_projects %}
+        <a href="{{ project.url }}" class="project-card">
+          <img src="{{ project.image }}" alt="{{ project.title }}" class="project-card-img">
+          <div class="project-card-content">
+            <div class="project-title">{{ project.title | truncate: 44 }}</div>
+            <div style="width:36px; margin-bottom:14px;"></div>
+            <div class="project-summary">{{ project.summary | truncate: 96 }}</div>
+            <div class="project-date">
+              <svg width="17" height="17" fill="#999" viewBox="0 0 20 20" style="margin-right:4px;vertical-align:middle;">
+                <path d="M6 2v2H4.5A2.5 2.5 0 0 0 2 6.5v9A2.5 2.5 0 0 0 4.5 18h11A2.5 2.5 0 0 0 18 15.5v-9A2.5 2.5 0 0 0 15.5 4H14V2h-1.5v2h-5V2zM4.5 5h11A1.5 1.5 0 0 1 17 6.5V7H3v-.5A1.5 1.5 0 0 1 4.5 5zm11 12h-11A1.5 1.5 0 0 1 3 15.5V8h14v7.5A1.5 1.5 0 0 1 15.5 17z"/>
+              </svg>
+              {{ project.start }} ~ {{ project.end }}
+            </div>
+            <div class="project-readmore">Read More</div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
