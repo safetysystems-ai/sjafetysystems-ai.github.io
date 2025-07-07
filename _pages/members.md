@@ -64,7 +64,7 @@ h2.section-title {
     {% if m.positions %}
       <div style="margin-bottom:10px;">
         <!--  <strong>Position(s):</strong> -->
-        <!-- <ul>  -->
+        <ul>
         {% for pos in m.positions %}
           <li>{{ pos }}</li>
         {% endfor %}
@@ -77,7 +77,7 @@ h2.section-title {
         <strong>Education</strong>
         <ul>
         {% for ed in m.education %}
-          <li><em>{{ ed }}</em></li>
+          <li>{{ ed }}</li>
         {% endfor %}
         </ul>
       </div>
