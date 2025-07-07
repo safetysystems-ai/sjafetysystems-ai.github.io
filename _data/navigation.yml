@@ -1,14 +1,14 @@
 # main links
 # _data/navigation.yml
 main:
-  - title: "Members"
-    url: /members/
   - title: "Projects"
     url: /projects/
+  - title: "Members"
+    url: /members/
   - title: "Publication"
     url: /publication/
   - title: "Contact"
-    url: /contact/
+    url: /#contact/
   - title: "Media"
     url: /media/
   - title: "Education"
