@@ -13,11 +13,11 @@ permalink: /members/
   margin-bottom: 40px;
 }
 .member-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 18px;
+  width: 300px;
+  height: 400px;
+  border-radius: 15px;
   object-fit: cover;
-  box-shadow: 0 4px 24px #ccc;
+  box-shadow: 0 4px 20px #ccc;
 }
 @media (max-width: 700px) {
   .member-flex {
