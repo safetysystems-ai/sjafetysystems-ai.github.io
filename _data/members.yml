@@ -52,6 +52,20 @@ current:
     linkedin: "https://www.linkedin.com/in/nitai-shah-5544b21b3/?originalSubdomain=in"
     scholar:
 
+  - name: "Taeeun Kim"
+    title: "Graduate Student Intern"
+    image: "/assets/images/Blank.png"
+    description: "Works on robotics in construction."
+    website: 
+    linkedin: "https://www.linkedin.com/in/taeeun-kim-09a039365/?originalSubdomain=kr"
+    scholar:
 
+  - name: "Archit Avhale"
+    title: "Undergraduate Research Assistant"
+    image: "/assets/images/Blank.png"
+    description: "Works on safety systems."
+    website: 
+    linkedin:
+    scholar:
     
   # ... 추가
