@@ -1,17 +1,17 @@
 - id: project-a
   title: "Project A"
   summary: "AI-driven construction safety analytics."
-  image: "/assets/images/Blank.png"
-  link: "/projects/#project-a"
-
+  image: "/assets/images/project-a.png"
+  link: "/projects/project-a/"   # 프로젝트 개별 페이지로 연결
 - id: project-b
+
   title: "Project B"
   summary: "Autonomous robots for jobsite inspection."
-  image: "/assets/images/Blank.png"
-  link: "/projects/#project-b"
-
+  image: "/assets/images/project-b.png"
+  link: "/projects/project-b/"
+  
 - id: project-c
   title: "Project C"
   summary: "Digital twin for disaster response."
-  image: "/assets/images/Blank.png"
-  link: "/projects/#project-c"
+  image: "/assets/images/project-c.png"
+  link: "/projects/project-c/"
