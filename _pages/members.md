@@ -65,3 +65,20 @@ h2.section-title {
   </div>
 </div>
 {% endfor %}
+
+---
+
+## Current Members
+
+<div style="margin-left:60px;">
+  <div style="display:flex; flex-wrap:wrap;">
+    {% for c in site.data.members.current %}
+      <div style="width:200px; background:#181b1f; margin:10px; padding:12px; border-radius:14px; text-align:center; color:#fafafa;">
+        <img src="{{ c.image }}" style="width:65px; height:65px; border-radius:18px;">
+        <div style="margin-top:8px; font-weight: bold;">{{ c.name }}</div>
+        <div style="font-size:0.95em;">{{ c.title }}</div>
+        <div style="font-size:0.92em; color:#cfcfcf;">{{ c.description }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
