@@ -31,6 +31,24 @@ h2.section-title {
   margin-left: 60px;
   margin-bottom: 38px; /* 아래 간격 충분히 */
 }
+  
+.member-card-name {
+  font-size: 1em;         /* was 1.1em */
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.member-card-title {
+  font-size: 0.92em;      /* was 1em */
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.member-card-desc {
+  font-size: 0.89em;      /* was 0.97em */
+  color: #666;
+  margin-bottom: 9px;
+}
+
 </style>
 
 <h2 class="section-title">Director</h2>
@@ -75,10 +93,10 @@ h2.section-title {
       <div style="width:320px; min-height: 430px; background:#f6f6f6; border-radius:24px; margin-bottom:18px; box-shadow:0 4px 18px #e5e5e5; display:flex; flex-direction:column; align-items:flex-start; overflow:hidden;">
         <img src="{{ c.image }}" alt="{{ c.name }}" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:24px 24px 0 0;">
         <div style="padding:18px 18px 12px 18px; width:100%;">
-          <div style="font-weight:600; font-size:1.1em; margin-bottom:2px;">{{ c.name }}</div>
-          <div style="font-size:1em; color:#333; font-weight:500; margin-bottom:6px;">{{ c.title }}</div>
+          <div class="member-card-name">{{ c.name }}</div>
+          <div class="member-card-title">{{ c.title }}</div>
           {% if c.description %}
-            <div style="font-size:0.97em; color:#666; margin-bottom:10px;">{{ c.description }}</div>
+            <div class="member-card-desc">{{ c.description }}</div>
           {% endif %}
           {% if c.website %}
             <a href="{{ c.website }}" target="_blank" title="Website" style="color:#222; display:inline-block; margin-right:8px;">
