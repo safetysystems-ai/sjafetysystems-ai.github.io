@@ -8,7 +8,7 @@ permalink: /members/
 ## Members
 
 {% for m in site.data.members.faculty %}
-<div style="display: flex; align-items: center; margin-bottom: 2em;">
+<div style="max-width: 900px; margin: 0 auto; padding-left: 60px;">
   <img src="{{ m.image }}" style="width:140px; height:140px; border-radius: 100px; margin-right: 28px; object-fit:cover; border: 2px solid #eee;">
   <div>
     <h2 style="margin-bottom: 0.5em;">{{ m.name }}</h2>
@@ -43,7 +43,7 @@ permalink: /members/
 
 ## Current Members
 
-<div style="display:flex; flex-wrap: wrap;">
+<div style="max-width: 900px; margin: 0 auto; padding-left: 60px;">
 {% for c in site.data.members.current %}
   <div style="width:220px; background:#f6f7fa; margin:10px; padding:10px; border-radius:12px; text-align:center;">
     <img src="{{ c.image }}" style="width:65px; height:65px; border-radius: 50%;">
