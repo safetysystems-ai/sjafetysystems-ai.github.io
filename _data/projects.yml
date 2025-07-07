@@ -1,17 +1,17 @@
 - id: project-a
   title: "Project A"
   summary: "AI-driven construction safety analytics."
-  image: "/assets/images/project-a.png"
+  image: "/assets/images/Blank.png"
   link: "/projects/#project-a"
 
 - id: project-b
   title: "Project B"
   summary: "Autonomous robots for jobsite inspection."
-  image: "/assets/images/project-b.png"
+  image: "/assets/images/Blank.png"
   link: "/projects/#project-b"
 
 - id: project-c
   title: "Project C"
   summary: "Digital twin for disaster response."
-  image: "/assets/images/project-c.png"
+  image: "/assets/images/Blank.png"
   link: "/projects/#project-c"
