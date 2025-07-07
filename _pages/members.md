@@ -60,20 +60,51 @@ h2.section-title {
     <div style="font-size:2em; font-weight:700; margin-bottom:10px;">
       {{ m.name }}
     </div>
-    {% for pos in m.positions %}
-      {{ pos }}<br>
-    {% endfor %}
-    <p style="margin-top:12px;">
-      {% for ed in m.education %}
-        <em>{{ ed }}</em><br>
-      {% endfor %}
-    </p>
-    <strong>Awards:</strong>
-    <ul>
-      {% for a in m.awards %}
-        <li>{{ a }}</li>
-      {% endfor %}
-    </ul>
+
+    {% if m.positions %}
+      <div style="margin-bottom:10px;">
+        <strong>Position(s):</strong>
+        <ul>
+        {% for pos in m.positions %}
+          <li>{{ pos }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if m.education %}
+      <div style="margin-bottom:10px;">
+        <strong>Education</strong>
+        <ul>
+        {% for ed in m.education %}
+          <li><em>{{ ed }}</em></li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}    
+
+    {% if m.affiliations %}
+      <div style="margin-bottom:10px;">
+        <strong>Career</strong>
+        <ul>
+        {% for aff in m.affiliations %}
+          <li>{{ aff }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if m.awards %}
+      <div style="margin-bottom:10px;">
+        <strong>Honors & Awards:</strong>
+        <ul>
+        {% for a in m.awards %}
+          <li>{{ a }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
     {% if m.linkedin %}
       <a href="{{ m.linkedin }}" target="_blank">LinkedIn</a>
     {% endif %}
