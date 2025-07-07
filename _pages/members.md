@@ -3,9 +3,6 @@ layout: page
 title: Members
 permalink: /members/
 ---
-<style>
-h2 { margin-left: 60px; }
-</style>
 
 <style>
 .member-flex {
@@ -32,7 +29,8 @@ h2 { margin-left: 60px; }
 }
 </style>
 
-## Members
+<div style="margin-left: 60px;">
+## Director
 
 <!-- Faculty loop -->
 {% for m in site.data.members.faculty %}
@@ -67,6 +65,7 @@ h2 { margin-left: 60px; }
 
 ---
 
+<div style="margin-left: 60px;">
 ## Legacy of Graduated PhDs and Postdocs
 
 <div style="display:flex; flex-wrap: wrap;">
@@ -85,6 +84,7 @@ h2 { margin-left: 60px; }
 
 ---
 
+<div style="margin-left: 60px;">
 ## Current Members
 
 <div style="display:flex; flex-wrap: wrap;">
