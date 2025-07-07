@@ -42,7 +42,7 @@ excerpt: "Safety Systems AI (SSAI) Lab"
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .project-card {
@@ -116,7 +116,7 @@ excerpt: "Safety Systems AI (SSAI) Lab"
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid">
-      {% for project in site.projects limit:3 %}
+      {% for project in site.projects limit:6 %}
         <a href="{{ project.url }}" class="project-card">
           <img src="{{ project.image }}" alt="{{ project.title }}" class="project-card-img">
           <div class="project-card-content">
