@@ -4,7 +4,7 @@ title: Members
 permalink: /members/
 ---
 <style>
-h2, h3 { margin-left: 60px; }
+h2 { margin-left: 60px; }
 </style>
 
 <style>
