@@ -80,8 +80,8 @@ permalink: /projects/
 .project-readmore {
   text-align: right;
   font-weight: 600;
-  color: #1a2a98;
-  font-size: 0.96em;
+  color: #333;
+  font-size: 0.80em;
   margin-bottom: 4px;
   letter-spacing: 0.01em;
 }
