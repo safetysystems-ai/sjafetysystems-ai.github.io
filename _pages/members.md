@@ -27,12 +27,13 @@ permalink: /members/
     align-items: center;
   }
 }
+h2, h3 {
+  margin-left: 60px;
+}
 </style>
 
-<div style="margin-left: 60px;">
-## Director
-</div>
 
+<h2 class="section-title">Director</h2>
 <!-- Faculty loop -->
 {% for m in site.data.members.faculty %}
 <div class="member-flex">
@@ -66,9 +67,7 @@ permalink: /members/
 
 ---
 
-<div style="margin-left: 60px;">
-## Legacy of Graduated PhDs and Postdocs
-</div>
+<h2 class="section-title">Legacy of Graduated PhDs and Postdocs</h2>
 
 <div style="display:flex; flex-wrap: wrap;">
 {% for p in site.data.members.phds_postdocs %}
@@ -86,9 +85,7 @@ permalink: /members/
 
 ---
 
-<div style="margin-left: 60px;">
-## Current Members
-</div>
+<h2 class="section-title">Current Members</h2>
 
 <div style="display:flex; flex-wrap: wrap;">
 {% for c in site.data.members.current %}
