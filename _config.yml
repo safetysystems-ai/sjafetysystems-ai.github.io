@@ -21,10 +21,10 @@ header:
   
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Safety Systems AI Lab | Texas A&M University"
+title                    : "Safety Systems AI (SSAI) Lab | Texas A&M University"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "SafetySystems AI La"
+name                     : "Safety Systems AI (SSAI) Lab"
 description              : "Welcome to SafetySystems AI Lab website."
 url                      : "https://ssai-lab.github.io" 
 baseurl                  : # the subpath of your site, e.g. "/blog"
