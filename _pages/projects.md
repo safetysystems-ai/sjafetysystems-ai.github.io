@@ -15,6 +15,7 @@ permalink: /projects/
   margin-left: -50vw;
   margin-right: -50vw;
   padding: 60px 0 80px 0;
+  text-decoration: none;
 }
 
 .project-inner-container {
@@ -62,6 +63,7 @@ permalink: /projects/
   margin-bottom: 8px;
   color: #171c36;
   line-height: 1.25;
+  text-decoration: none;
 }
 .project-summary {
   font-size: 0.97em;
