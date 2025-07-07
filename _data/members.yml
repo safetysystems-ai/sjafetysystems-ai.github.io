@@ -31,11 +31,27 @@ current:
   - name: "Jinsol Lee, PhD."
     title: "Postdoctoral Researcher"
     image: "/assets/images/Blank.png"
-    website: "https://scholar.google.com/citations?user=RvdJPIYAAAAJ&hl=ko"
+    description: "Focuses on construction automation."
+    website: 
+    linkedin:
+    scholar: "https://scholar.google.com/citations?user=RvdJPIYAAAAJ&hl=ko"
 
-  - name: "Jaehoon Lee, PhD Student."
-    title: "Postdoctoral Researcher"
+  - name: "Jaehoon Lee"
+    title: "PhD Student"
     image: "/assets/images/Blank.png"
-    website: "https://scholar.google.com/citations?user=RvdJPIYAAAAJ&hl=ko"
+    description: "Works on safety systems."
+    website: "https://jaehoonblog.com/"
+    linkedin: "https://www.linkedin.com/in/jaehoon-lee-93115b25a/?locale=en_US"
+    scholar:
+
+  - name: "Nitai Premal Shah"
+    title: "MS Student"
+    image: "/assets/images/Blank.png"
+    description: "Works on workzone safety."
+    website: 
+    linkedin: "https://www.linkedin.com/in/nitai-shah-5544b21b3/?originalSubdomain=in"
+    scholar:
+
+
     
   # ... 추가
