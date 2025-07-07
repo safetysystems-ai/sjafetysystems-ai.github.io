@@ -269,6 +269,12 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -276,6 +282,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
 
 
 # Archives
