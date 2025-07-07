@@ -1,0 +1,34 @@
+# _data/members.yml
+
+faculty:
+  - name: "Namgyun Kim, PhD., PMP"
+    title: "Director"
+    image: "/assets/images/NK_Headshot.jpg"
+    positions:
+      - "Assistant Professor"
+      - "Department of Construction Science"
+
+    education: "Accelerated Evaluation of Automated Vehicles, University of Michigan (advised by Huei Peng)"
+    awards:
+      - "Best Paper Award in Safety and Health Track, ASCE Construction Research Congress 2024"
+      - "Outstanding Junior Faculty Award, Korean American Construction Engineering and Project Management Association (KACEPMA)"
+      - "3rd Place Best Data Award, Best Data Award Competition, ASCE DSA community 2024"
+      - "Distinguished Dissertation Award 2023, Texas A&M University"
+      - "1st Place Best Poster Award, Associated Schools of Construction Annual International Conference 2021 (ASC 2021)"
+    linkedin: "https://www.linkedin.com/in/namgyun-kim-477945134/"
+    website: "https://https://www.arch.tamu.edu/staff/namgyun-kim/"
+
+phds_postdocs:
+  - name: "Yan"
+    title: "Principal Engineer, NVIDIA"
+    image: "/assets/images/yanchang.jpg"
+    description: "Building foundation models, data pipelines, and simulation workflows for humanoid robots"
+    website: "https://..."
+  # ... add new members
+
+Current Members:
+  - name: "Jinsol Lee, PhD."
+    title: "Postdoctoral Researcher"
+    image: "/assets/images/yao.jpg"
+    description: "Safety of Robotic Foundation Models"
+  # ... add new members
