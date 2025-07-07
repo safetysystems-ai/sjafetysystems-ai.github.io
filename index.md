@@ -110,7 +110,7 @@ html {
   scroll-behavior: smooth;
 }
 .contact-section-bg {
-  background: #f8f8fa;      /* 원하는 컬러 */
+  background: #f8f8fa;
   min-height: 60vh;
   width: 100vw;
   position: relative;
@@ -156,7 +156,7 @@ html {
 
 
 <!-- Contact Us Section -->
-<div id="contact" style="background:#f8f8fa; padding:64px 0 80px 0; margin-top:60px;">
+<div id="contact" class="contact-section-bg">
   <div style="max-width:600px; margin:0 auto; text-align:center;">
     <h2 style="font-size:2em; font-weight:700; margin-bottom:14px;">Contact Us</h2>
     <div style="font-size:1.07em; color:#333; margin-bottom:28px;">
