@@ -47,7 +47,7 @@ h2.section-title {
     {% endfor %}
     <p style="margin-top:12px;">
       {% for ed in m.education %}
-        <em>{{ ed }}</em><br>
+        <em>{{ ed }}</em></li>
       {% endfor %}
     </p>
     <strong>Awards:</strong>
