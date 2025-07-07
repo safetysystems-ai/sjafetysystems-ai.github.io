@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
+status: ongoing
 ---
 
 <style>
