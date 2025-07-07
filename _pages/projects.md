@@ -5,85 +5,116 @@ permalink: /projects/
 ---
 
 <style>
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-  gap: 32px;
-  margin-top: 32px;
+.project-section-bg {
+  background: #f5f6f7;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 60px 0 80px 0;
 }
-.project-card {
-  background: #f6f7fa;
-  border-radius: 18px;
-  box-shadow: 0 4px 20px #e2e5ea;
-  overflow: hidden;
+
+.project-inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.project-grid {
   display: flex;
-  flex-direction: column;
-  transition: transform 0.18s, box-shadow 0.18s;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.project-card {
+  width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px #e0e0e0;
+  transition: box-shadow .17s, transform .11s;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 24px;
+  overflow: hidden;
+  position: relative;
 }
 .project-card:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 8px 28px #d4d8e1;
+  box-shadow: 0 12px 32px #dbdbdb;
+  transform: translateY(-4px) scale(1.025);
 }
-.project-img {
+.project-card-img {
   width: 100%;
-  height: 180px;
+  height: 170px;
   object-fit: cover;
-  border-radius: 18px 18px 0 0;
-  background: #cdd1d6;
+  border-radius: 16px 16px 0 0;
 }
-.project-body {
-  padding: 22px 22px 18px 22px;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
+.project-card-content {
+  padding: 18px 18px 8px 18px;
 }
 .project-title {
-  font-size: 1.1em;
   font-weight: 700;
-  margin-bottom: 10px;
-  color: #1c222c;
-  letter-spacing: 0.01em;
+  font-size: 1.08em;
+  margin-bottom: 8px;
+  color: #171c36;
+  line-height: 1.25;
 }
 .project-summary {
-  font-size: 0.99em;
-  color: #586174;
+  font-size: 0.97em;
+  color: #656e7a;
   margin-bottom: 18px;
-  min-height: 45px;
+  min-height: 52px;
 }
-.project-period {
-  font-size: 0.93em;
-  color: #7b8897;
-  margin-bottom: 16px;
+.project-date {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 14px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 .project-readmore {
-  margin-top: auto;
-  font-size: 0.96em;
-  color: #2a67fa;
+  text-align: right;
   font-weight: 600;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  transition: color 0.15s;
+  color: #1a2a98;
+  font-size: 0.96em;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
 }
-.project-readmore:hover {
-  color: #194ed3;
-  text-decoration: underline;
+@media (max-width: 850px) {
+  .project-inner-container { max-width: 95vw; }
+  .project-card { width: 96vw; max-width: 380px;}
 }
 </style>
 
-<h2 style="margin-top:24px;">Project in progress</h2>
-<div class="project-grid">
-  {% for project in site.projects %}
-    <div class="project-card">
-      <img class="project-img" src="{{ project.image }}" alt="{{ project.title }}">
-      <div class="project-body">
-        <div class="project-title">{{ project.title | truncate: 48 }}</div>
-        <div class="project-summary">{{ project.summary | truncate: 90 }}</div>
-        <div class="project-period">📅 {{ project.start }} ~ {{ project.end }}</div>
-        <a class="project-readmore" href="{{ project.url }}">Read More &rarr;</a>
-      </div>
+<div class="project-section-bg">
+  <div class="project-inner-container">
+    <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
+      Project in progress
+    </h2>
+    <div style="width:44px; border-bottom:3px solid #212349; margin-bottom:38px; margin-left:3px;"></div>
+    <div class="project-grid">
+      {% for project in site.projects %}
+        <a href="{{ project.url }}" class="project-card">
+          <img src="{{ project.image }}" alt="{{ project.title }}" class="project-card-img">
+          <div class="project-card-content">
+            <div class="project-title">{{ project.title | truncate: 44 }}</div>
+            <div style="border-bottom:2px solid #222; width:36px; margin-bottom:14px;"></div>
+            <div class="project-summary">{{ project.summary | truncate: 96 }}</div>
+            <div class="project-date">
+              <svg width="17" height="17" fill="#999" viewBox="0 0 20 20" style="margin-right:4px;vertical-align:middle;">
+                <path d="M6 2v2H4.5A2.5 2.5 0 0 0 2 6.5v9A2.5 2.5 0 0 0 4.5 18h11A2.5 2.5 0 0 0 18 15.5v-9A2.5 2.5 0 0 0 15.5 4H14V2h-1.5v2h-5V2zM4.5 5h11A1.5 1.5 0 0 1 17 6.5V7H3v-.5A1.5 1.5 0 0 1 4.5 5zm11 12h-11A1.5 1.5 0 0 1 3 15.5V8h14v7.5A1.5 1.5 0 0 1 15.5 17z"/>
+              </svg>
+              {{ project.start }} ~ {{ project.end }}
+            </div>
+            <div class="project-readmore">Read More</div>
+          </div>
+        </a>
+      {% endfor %}
     </div>
-  {% endfor %}
+  </div>
 </div>
