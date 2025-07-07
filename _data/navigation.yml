@@ -8,7 +8,7 @@ main:
   - title: "Publication"
     url: /publication/
   - title: "Contact"
-    url: /#contact/
+    url: "/#contact"
   - title: "Media"
     url: /media/
   - title: "Education"
