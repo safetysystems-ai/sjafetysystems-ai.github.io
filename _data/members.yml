@@ -7,8 +7,7 @@ faculty:
     positions:
       - "Assistant Professor"
       - "Department of Construction Science"
-
-    education: 
+    education:
       - "PhD in Construction Science, Texas A&M University"
       - "MS in Architectural Engineering, Sungkyunkwan University"
       - "BS in Architectural Engineering, Konkuk University"
@@ -19,19 +18,19 @@ faculty:
       - "Distinguished Dissertation Award 2023, Texas A&M University"
       - "1st Place Best Poster Award, Associated Schools of Construction Annual International Conference 2021 (ASC 2021)"
     linkedin: "https://www.linkedin.com/in/namgyun-kim-477945134/"
-    website: "https://https://www.arch.tamu.edu/staff/namgyun-kim/"
+    website: "https://www.arch.tamu.edu/staff/namgyun-kim/"
 
 phds_postdocs:
-  - name: "N"
+  - name: "Yan Chang"
     title: "Principal Engineer, NVIDIA"
     image: "/assets/images/yanchang.jpg"
     description: "Building foundation models, data pipelines, and simulation workflows for humanoid robots"
     website: "https://..."
-  # ... add new members
+  # ... 추가
 
-Current Members:
+current:
   - name: "Jinsol Lee, PhD."
     title: "Postdoctoral Researcher"
     image: "/assets/images/Blan.png"
-    description: "-"
-  # ... add new members
+    description: ""
+  # ... 추가
