@@ -4,52 +4,93 @@ title: Members
 permalink: /members/
 ---
 
-<!-- 메인 Faculty (PI) -->
+<style>
+.member-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+.member-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 4px 24px #ccc;
+}
+@media (max-width: 700px) {
+  .member-flex {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+    align-items: center;
+  }
+}
+</style>
+
 ## Members
 
+<!-- Faculty loop -->
 {% for m in site.data.members.faculty %}
-<div style="max-width: 900px; margin: 0 auto; padding-left: 60px;">
-  <img src="{{ m.image }}" style="width:140px; height:140px; border-radius: 100px; margin-right: 28px; object-fit:cover; border: 2px solid #eee;">
+<div class="member-flex">
+  <img src="{{ m.image }}" alt="{{ m.name }}" class="member-photo">
   <div>
-    <h2 style="margin-bottom: 0.5em;">{{ m.name }}</h2>
-    <div><strong>{{ m.title }}</strong></div>
-    <div>
-      {% for pos in m.positions %}
-        <div>{{ pos }}</div>
+    <h2 style="margin-top:0;">{{ m.name }}</h2>
+    <strong>{{ m.title }}</strong><br>
+    {% for pos in m.positions %}
+      {{ pos }}<br>
+    {% endfor %}
+    <p>
+      {% for ed in m.education %}
+        <em>{{ ed }}</em><br>
       {% endfor %}
-    </div>
-    <div style="margin-top:8px;"><em>{{ m.education }}</em></div>
-    <div style="margin-top:8px;"><strong>Awards:</strong>
-      <ul>
-        {% for a in m.awards %}
-          <li>{{ a }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div>
-      {% if m.linkedin %}
-        <a href="{{ m.linkedin }}">LinkedIn</a>
-      {% endif %}
-      {% if m.website %}
-        | <a href="{{ m.website }}">Website</a>
-      {% endif %}
-    </div>
+    </p>
+    <strong>Awards:</strong>
+    <ul>
+      {% for a in m.awards %}
+        <li>{{ a }}</li>
+      {% endfor %}
+    </ul>
+    {% if m.linkedin %}
+      <a href="{{ m.linkedin }}" target="_blank">LinkedIn</a>
+    {% endif %}
+    {% if m.website %}
+      | <a href="{{ m.website }}" target="_blank">Website</a>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
 
 ---
 
+## Legacy of Graduated PhDs and Postdocs
+
+<div style="display:flex; flex-wrap: wrap;">
+{% for p in site.data.members.phds_postdocs %}
+  <div style="width:270px; background:#181b1f; margin:10px; padding:16px; border-radius:18px; display:inline-block; vertical-align:top; text-align:center; color: #fafafa;">
+    <img src="{{ p.image }}" style="width:85px; height:85px; border-radius:15%;">
+    <div style="margin-top:10px; font-weight: bold;">{{ p.name }}</div>
+    <div style="font-size:0.97em;">{{ p.title }}</div>
+    <div style="margin-top:5px; font-size:0.93em;">{{ p.description }}</div>
+    {% if p.website %}
+      <div style="margin-top:8px;"><a href="{{ p.website }}" target="_blank" style="color:#42a5f5;">Website</a></div>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>
+
+---
 
 ## Current Members
 
-<div style="max-width: 900px; margin: 0 auto; padding-left: 60px;">
+<div style="display:flex; flex-wrap: wrap;">
 {% for c in site.data.members.current %}
-  <div style="width:220px; background:#f6f7fa; margin:10px; padding:10px; border-radius:12px; text-align:center;">
-    <img src="{{ c.image }}" style="width:65px; height:65px; border-radius: 50%;">
+  <div style="width:200px; background:#181b1f; margin:10px; padding:12px; border-radius:14px; text-align:center; color: #fafafa;">
+    <img src="{{ c.image }}" style="width:65px; height:65px; border-radius: 15%;">
     <div style="margin-top:8px; font-weight: bold;">{{ c.name }}</div>
     <div style="font-size:0.95em;">{{ c.title }}</div>
-    <div style="font-size:0.9em; color:#444;">{{ c.description }}</div>
+    <div style="font-size:0.92em; color:#cfcfcf;">{{ c.description }}</div>
   </div>
 {% endfor %}
 </div>
