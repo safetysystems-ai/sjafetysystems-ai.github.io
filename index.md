@@ -124,17 +124,17 @@ html {
 
 <!-- Projects Section (Main Page) -->
 <div class="project-section-bg">
-  <div class="project-inner-container">    
+  <div class="project-inner-container" style="display:flex; flex-direction:column; align-items:center;">
 
     <!-- 로고 삽입부 START -->
-    <div style="display:flex; justify-content:center; align-items:center; margin-bottom:28px;">
+    <div style="display:flex; justify-content:center; align-items:center; margin-bottom:28px; width:100%;">
       <img src="/assets/images/Logo_full_Blue.png"
            alt="Safety Systems AI Lab Logo"
            style="width:900px; max-width:98vw; height:auto;" />
     </div>
     <!-- 로고 삽입부 END -->
 
-    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center; width:100%;">
       Research Projects
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
@@ -169,7 +169,7 @@ html {
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Recent News
     </h2>
-    <ul style="font-size:0.5em; color:#262626; margin-bottom:18px; padding-left:18px;">
+    <ul style="font-size:0.8em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {% assign news2025 = site.data.news | where: "year", 2025 %}
       {% for year in news2025 %}
         {% for item in year.items %}
