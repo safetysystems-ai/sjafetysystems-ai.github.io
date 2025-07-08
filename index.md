@@ -165,36 +165,40 @@ html {
 
 <!-- Recent News Section (Main Page) -->
 <div class="recent-news-section" style="background:#fff; padding:44px 0 32px 0; margin:0;">
-  <div style="max-width:820px; margin:0 auto; margin-left:3px;">
+  <div style="max-width:1080px; margin:0 auto;">
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Recent News
     </h2>
-    <ul style="font-size:0.5em; color:#262626; margin-bottom:18px; padding-left:18px;">
-      {% for year in site.data.news %}
-        {% if year.year == 2025 %}
-          {% for item in year.items %}
-            <li style="margin-bottom:7px; line-height:1.65;">
-              {% if item.date %}
-                <b>{{ item.date }}</b>&nbsp;
-              {% endif %}
-              {% if item.url %}
-                <a href="{{ item.url }}" target="_blank" style="color:#225;">
-                  {{ item.text }}
-                </a>
-              {% else %}
+    <ul style="font-size:1.01em; color:#262626; margin-bottom:18px; padding-left:18px;">
+      {% assign news2025 = site.data.news | where: "year", 2025 %}
+      {% for year in news2025 %}
+        {% for item in year.items %}
+          <li style="margin-bottom:7px; line-height:1.65;">
+            {% if item.date %}
+              <b>{{ item.date }}</b>&nbsp;
+            {% endif %}
+            {% if item.url %}
+              <a href="{{ item.url }}" target="_blank" style="color:#225;">
                 {{ item.text }}
-              {% endif %}
-            </li>
-          {% endfor %}
-        {% endif %}
+              </a>
+            {% else %}
+              {{ item.text }}
+            {% endif %}
+          </li>
+        {% endfor %}
       {% endfor %}
     </ul>
+    <div style="margin-top:18px; text-align:center;">
+      <a href="/news/" style="font-size:1.05em; color:#222; text-decoration:underline; font-weight:600;">View all news</a>
+    </div>
+  </div>
+</div>
 
 
 
 <!-- Contact Us Section -->
 <div id="contact" class="contact-section-bg">
-  <div style="max-width:600px; margin:0 auto; text-align:center;">
+  <div style="max-width:700px; margin:0 auto; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center;">
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:14px;">Contact Us</h2>
     <div style="font-size:1.07em; color:#333; margin-bottom:28px;">
       Have questions? Interested in collaboration?<br>
