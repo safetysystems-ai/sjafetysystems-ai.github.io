@@ -5,8 +5,8 @@ main:
     url: /projects/
   - title: "Members"
     url: /members/
-  - title: "Publication"
-    url: /publication/
+  - title: "Publications"
+    url: /publications/
   - title: "Contact"
     url: "/#contact"
   - title: "News"
