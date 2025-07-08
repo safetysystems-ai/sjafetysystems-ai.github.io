@@ -125,6 +125,15 @@ html {
 <!-- Projects Section (Main Page) -->
 <div class="project-section-bg">
   <div class="project-inner-container">
+    
+    <!-- 로고 삽입부 START -->
+    <div style="display:flex; justify-content:center; align-items:center; margin-bottom:28px;">
+      <img src="/assets/images/Logo_noline_grey.png"
+           alt="Safety Systems AI Lab Logo"
+           style="width:420px; max-width:90vw; height:auto; opacity:0.90;" />
+    </div>
+    <!-- 로고 삽입부 END -->
+    
     <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
       Research Projects
     </h2>
