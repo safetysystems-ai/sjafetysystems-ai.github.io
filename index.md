@@ -185,6 +185,8 @@ html {
         {% endfor %}
       {% endfor %}
     </ul>
+  </div>
+</div> <!-- Make sure this closes the .recent-news-section -->
 
 
 <!-- Contact Us Section -->
