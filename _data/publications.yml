@@ -46,7 +46,7 @@ journal:
     link: "https://doi.org/10.1016/j.autcon.2020.103390"
   # ... 기타 저널 논문
 conference:
-  - authors: "Lee, J., Ahn, C.R., Lee, H, Jeon, J., Kim, N.*"
+  - authors: "Lee, J.**, Ahn, C.R., Lee, H, Jeon, J., Kim, N.*"
     year: 2024
     title: "Detecting Activities Exposing Construction Workers to the Risk of Developing Carpal Tunnel Syndrome"
     conference: "Construction Research Congress2024, ASCE, March 20-23, 2024, Des Moines, IA (Best Paper Award)"
