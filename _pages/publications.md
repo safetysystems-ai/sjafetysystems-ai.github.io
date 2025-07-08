@@ -12,18 +12,18 @@ permalink: /publications/
   margin-bottom: 32px;
 }
 .pub-cat-btn {
-  background: #888a94;
+  background: #2b2979;
   color: #fff;
   border: none;
   border-radius: 7px 7px 0 0;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 1.05em;
   padding: 12px 28px;
   cursor: pointer;
-  opacity: 0.88;
+  opacity: 0.85;
 }
 .pub-cat-btn.active, .pub-cat-btn:hover {
-  background: #44454f;
+  background: #4947a6;
   opacity: 1;
 }
 .pub-list {
@@ -48,33 +48,81 @@ permalink: /publications/
   </div>
 
   <!-- All Papers List -->
-  <div style="font-size:0.8em; margin-bottom:20px;">
+<ol id="pub-all" class="pub-list">
+  <div style="font-size:1em; margin-bottom:20px;">
     <b>Graduate student or postdoctoral scholar advisee, <i>*Corresponding author</i></b>
   </div>
-  <ol id="pub-all" class="pub-list">
-    {% assign all_journals = site.data.publications.journal %}
-    {% assign all_confs = site.data.publications.conference %}
-    {% for pub in all_journals %}
-      <li>
-        {{ forloop.index }}. 
-        {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
-        <b>“{{ pub.title }}”</b>
-        {{ pub.journal }}
-        {% if pub.link %}
-          <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-    {% for pub in all_confs %}
-      <li>
-        {{ forloop.index | plus: all_journals.size }}. 
-        {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
-        <b>“{{ pub.title }}”</b>
-        {{ pub.conference }}
-        {% if pub.link %}
-          <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ol>
-  <!-- 이하 동일 (journal, conference) 부분도 ol/li 구조 위와 같이 div 바깥! -->
+  {% assign all_journals = site.data.publications.journal %}
+  {% assign all_confs = site.data.publications.conference %}
+  {% for pub in all_journals %}
+    <li>
+      {{ forloop.index }}. 
+      {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
+      <b>“{{ pub.title }}”</b>
+      {{ pub.journal }}
+      {% if pub.link %}
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+  {% for pub in all_confs %}
+    <li>
+      {{ forloop.index | plus: all_journals.size }}. 
+      {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
+      <b>“{{ pub.title }}”</b>
+      {{ pub.conference }}
+      {% if pub.link %}
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>
+
+  <!-- Journal Only -->
+<ol id="pub-journal" class="pub-list" style="display:none;">
+  <div style="font-size:1em; margin-bottom:20px;">
+    <b>Graduate student or postdoctoral scholar advisee, <i>*Corresponding author</i></b>
+  </div>
+  {% for pub in site.data.publications.journal %}
+    <li>
+      {{ forloop.index }}. 
+      {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
+      <b>“{{ pub.title }}”</b>
+      {{ pub.journal }}
+      {% if pub.link %}
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>
+
+<!-- Conference Only -->
+<ol id="pub-conference" class="pub-list" style="display:none;">
+  <div style="font-size:1em; margin-bottom:20px;">
+    <b>Graduate student or postdoctoral scholar advisee, <i>*Corresponding author</i></b>
+  </div>
+  {% for pub in site.data.publications.conference %}
+    <li>
+      {{ forloop.index }}. 
+      {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
+      <b>“{{ pub.title }}”</b>
+      {{ pub.conference }}
+      {% if pub.link %}
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>
+
+<script>
+function showPubs(cat) {
+  document.getElementById('pub-all').style.display = cat === 'all' ? '' : 'none';
+  document.getElementById('pub-journal').style.display = cat === 'journal' ? '' : 'none';
+  document.getElementById('pub-conference').style.display = cat === 'conference' ? '' : 'none';
+  var btns = document.querySelectorAll('.pub-cat-btn');
+  btns.forEach(function(b, i){
+    b.classList.remove('active');
+    if ((cat === 'all' && i===0) || (cat==='journal' && i===1) || (cat==='conference' && i===2)) b.classList.add('active');
+  });
+}
+</script>
