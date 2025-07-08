@@ -165,7 +165,7 @@ html {
 
 <!-- Recent News Section (Main Page) -->
 <div class="recent-news-section" style="background:#fff; padding:32px 0 32px 0; margin:0;">
-  <div style="max-width:1080px; margin:0 auto;">
+  <div style="max-width:1000px; margin:0 auto;">
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Recent News
     </h2>
@@ -177,23 +177,14 @@ html {
             {% if item.date %}
               <b>{{ item.date }}</b>&nbsp;
             {% endif %}
+            {{ item.text }}
             {% if item.url %}
-              <a href="{{ item.url }}" target="_blank" style="color:#225;">
-                {{ item.text }}
-              </a>
-            {% else %}
-              {{ item.text }}
+              <a href="{{ item.url }}" target="_blank" style="color:#225; margin-left:7px;">{{ item.link_text | default: "[Link]" }}</a>
             {% endif %}
           </li>
         {% endfor %}
       {% endfor %}
     </ul>
-    <div style="margin-top:18px; text-align:center;">
-      <a href="/news/" style="font-size:1.05em; color:#222; text-decoration:underline; font-weight:600;">View all news</a>
-    </div>
-  </div>
-</div>
-
 
 
 <!-- Contact Us Section -->
