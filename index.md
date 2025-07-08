@@ -169,30 +169,27 @@ html {
     <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
       Recent News
     </h2>
-    <ul style="font-size:1.01em; color:#262626; margin-bottom:18px; padding-left:18px;">
-      {% assign news2025 = site.data.news | where: "year", 2025 %}
-      {% for year in news2025 %}
-        {% for item in year.items %}
-          <li style="margin-bottom:7px; line-height:1.65;">
-            {% if item.date %}
-              <b>{{ item.date }}</b>&nbsp;
-            {% endif %}
-            {% if item.url %}
-              <a href="{{ item.url }}" target="_blank" style="color:#225;">
-                {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
-              </a>
-            {% else %}
-              {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
-            {% endif %}
-          </li>
-        {% endfor %}
+    <ul style="font-size:1em; color:#262626; margin-bottom:18px; padding-left:18px;">
+      {% for year in site.data.news %}
+        {% if year.year == 2025 %}
+          {% for item in year.items %}
+            <li style="margin-bottom:7px; line-height:1.65;">
+              {% if item.date %}
+                <b>{{ item.date }}</b>&nbsp;
+              {% endif %}
+              {% if item.url %}
+                <a href="{{ item.url }}" target="_blank" style="color:#225;">
+                  {{ item.text }}
+                </a>
+              {% else %}
+                {{ item.text }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        {% endif %}
       {% endfor %}
     </ul>
-    <div style="margin-top:18px; text-align:center;">
-      <a href="/news/" style="font-size:1.05em; color:#222; text-decoration:underline; font-weight:600;">View all news</a>
-    </div>
-  </div>
-</div>
+
 
 
 <!-- Contact Us Section -->
