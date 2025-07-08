@@ -128,7 +128,7 @@ html {
     
     <!-- 로고 삽입부 START -->
     <div style="display:flex; justify-content:center; align-items:center; margin-bottom:28px;">
-      <img src="/assets/images/Logo_noline_grey.png"
+      <img src="/assets/images/Logo_noline_black.png"
            alt="Safety Systems AI Lab Logo"
            style="width:620px; max-width:98vw; height:auto;" />
     </div>
