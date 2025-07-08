@@ -34,7 +34,7 @@ h2.section-title {
 
 .member-list-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 32px;
   margin: 0 auto 40px auto;
