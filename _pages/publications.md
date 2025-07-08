@@ -1,6 +1,7 @@
 ---
-layout: splash
+layout: page
 title: "Publications"
+permalink: /publications/
 ---
 
 <style>
