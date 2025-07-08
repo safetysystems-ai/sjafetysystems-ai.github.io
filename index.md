@@ -164,12 +164,12 @@ html {
 </div>
 
 <!-- Recent News Section (Main Page) -->
-<div class="recent-news-section" style="background:#fff; padding:32px 0 32px 0; margin:0;">
+<div class="recent-news-section" style="background:#fff; padding:30px 0 32px 0; margin:0;">
   <div style="max-width:1000px; margin:0 auto;">
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Recent News
     </h2>
-    <ul style="font-size:1.01em; color:#262626; margin-bottom:18px; padding-left:18px;">
+    <ul style="font-size:0.5em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {% assign news2025 = site.data.news | where: "year", 2025 %}
       {% for year in news2025 %}
         {% for item in year.items %}
