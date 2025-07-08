@@ -122,18 +122,31 @@ html {
 }
 </style>
 
+<!-- Logo Section (Background Box) -->
+<div style="
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  background: #f5f6f7;
+  padding: 48px 0 44px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #e1e1e1;
+  z-index: 1;
+">
+  <img src="/assets/images/Logo_noline_black.png"
+       alt="Safety Systems AI Lab Logo"
+       style="width:700px; max-width:98vw; height:auto;" />
+</div>
+
+
 <!-- Projects Section (Main Page) -->
 <div class="project-section-bg">
-  <div class="project-inner-container">
-    
-    <!-- 로고 삽입부 START -->
-    <div style="display:flex; justify-content:center; align-items:center; margin-bottom:28px;">
-      <img src="/assets/images/Logo_noline_black.png"
-           alt="Safety Systems AI Lab Logo"
-           style="width:620px; max-width:98vw; height:auto;" />
-    </div>
-    <!-- 로고 삽입부 END -->
-    
+  <div class="project-inner-container">    
     <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
       Research Projects
     </h2>
