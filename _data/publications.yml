@@ -1,0 +1,54 @@
+journal:
+  - authors: "Kim, N., Park, S., Uhm, M., Ahn, C. R., and Kim, H.*"
+    year: 2025
+    title: "Enhancing Construction Managers’ Risk Perception and Lowering Risk Tolerance Toward Unsafe Behaviors Through Experiential Safety Training"
+    journal: "Journal of Management in Engineering, ASCE, 41(1), 04024067"
+    link: "https://doi.org/10.1061/JMENEA.MEENG-6283"
+  - authors: "Kim, N., Grégoire, L., Razavi, M., Yan, N., Lee, D., Lewis, P., Ahn, C. R.*"
+    year: 2024
+    title: "Protocol to evaluate the effectiveness of a virtual reality-based behavioral intervention in enhancing sensory responses to real-world warning"
+    journal: "Star Protocols, Cell Press, 5(3), 103262"
+    link: "https://doi.org/10.1016/j.xpro.2024.103262"
+  - authors: "Grégoire, L., Dubravac, M., Moore, K., Kim, N., and Anderson, B. A.*"
+    year: 2024
+    title: "Observational Learning of Threat-related Attentional Bias"
+    journal: "Cognition and Emotion, Taylor & Francis Online, 38(5)"
+    link: "https://doi.org/10.1080/02699931.2024.2317917"
+  - authors: "Anderson, B. A.*, Kim, N., Grégoire, L., Yan, N., and Ahn, C. R."
+    year: 2024
+    title: "Attention failures cause workplace accidents: Why workers ignore hazards and what to do about it"
+    journal: "Policy Insights from the Behavioral and Brain Sciences, SAGE, 11, (1), 27-35"
+    link: "https://doi.org/10.1177/23727322231218190"
+  - authors: "Kim, N., *Grégoire, L., Razavi, M., Yan, N., Ahn, C. R.*, and Anderson, B. A."
+    year: 2023
+    title: "A Virtual Accident Curbs Risk Habituation in Construction Workers by Restoring Sensory Responses to Real-world Warning Signals"
+    journal: "Journal of Construction Engineering and Management, ASCE, 149(2), 04022175"
+    link: "https://doi.org/10.1016/j.isci.2022.105827"
+  - authors: "Kim, N., Yan, N., Grégoire, L., Anderson, B. A., and Ahn, C. R.*"
+    year: 2023
+    title: "Road Construction Workers’ Boredom Susceptibility, Habituation to Warning Alarms, and Accident Proneness: A Virtual Reality Experiment"
+    journal: "Policy Insights from the Behavioral and Brain Sciences, SAGE, 11, (1), 27-35"
+    link: "https://doi.org/10.1061/JCEMD4.COENG-12818"
+  - authors: "Kim, N., Anderson, B. A., and Ahn, C. R.*"
+    year: 2021
+    title: "Reducing Risk Habituation to Struck-by Hazards in a Road Construction Environment Using Virtual Reality Behavioral Intervention"
+    journal: "Journal of Construction Engineering and Management, ASCE, 147(11), 04021157"
+    link: "https://doi.org/10.1061/(ASCE)CO.1943-7862.0002187"
+  - authors: "Kim, N., Kim, J., and Ahn, C. R.*"
+    year: 2021
+    title: "Predicting Workers’ Inattentiveness to Struck-by Hazards by Monitoring Biosignals During a Construction Task: A Virtual Reality Experiment"
+    journal: "Advanced Engineering Informatics, Elsevier, 49, 101359"
+    link: "https://doi.org/10.1016/j.aei.2021.101359"
+  - authors: "Lee, H., Yang, K., Kim, N., and Ahn, C. R.*"
+    year: 2020
+    title: "Detecting Excessive Load-Carrying Tasks Using a Deep Learning Network with a Gramian Angular Field"
+    journal: "Automation in Construction, 120, 103990"
+    link: "https://doi.org/10.1016/j.autcon.2020.103390"
+  # ... 기타 저널 논문
+conference:
+  - authors: "Lee, J., Ahn, C.R., Lee, H, Jeon, J., Kim, N.*"
+    year: 2024
+    title: "Detecting Activities Exposing Construction Workers to the Risk of Developing Carpal Tunnel Syndrome"
+    conference: "Construction Research Congress2024, ASCE, March 20-23, 2024, Des Moines, IA (Best Paper Award)"
+    link: "https://doi.org/10.1061/9780784485293.053"
+  # ... 기타 컨퍼런스 논문
