@@ -163,6 +163,30 @@ html {
   </div>
 </div>
 
+<!-- Recent News Section (Main Page) -->
+<div class="recent-news-section" style="background:#fff; padding:44px 0 32px 0; margin:0;">
+  <div style="max-width:820px; margin:0 auto;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px;">Recent News</h2>
+    <ul style="font-size:1.12em; color:#262626; margin-bottom:18px;">
+      {% assign news2025 = site.data.news | where: "year", 2025 %}
+      {% for year in news2025 %}
+        {% for item in year.items %}
+          <li style="margin-bottom:7px;">
+            {% if item.date %}
+              <b>{{ item.date }}</b>
+            {% endif %}
+            {{ item.text | markdownify }}
+          </li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+    <div style="margin-top:18px; text-align:right;">
+      <a href="/news/" style="font-size:1.09em; color:#225; text-decoration:underline; font-weight:500;">View all news</a>
+    </div>
+  </div>
+</div>
+
+
 
 <!-- Contact Us Section -->
 <div id="contact" class="contact-section-bg">
