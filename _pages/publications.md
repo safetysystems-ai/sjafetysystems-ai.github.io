@@ -32,7 +32,7 @@ permalink: /publications/
   background: #fff;
   border-radius: 8px;
   padding: 30px 40px;
-  font-size: 1.11em;
+  font-size: 0.8em;
 }
 .pub-list li { margin-bottom: 28px; }
 @media (max-width: 850px) {
@@ -50,7 +50,7 @@ permalink: /publications/
   <!-- All Papers List -->
 <ol id="pub-all" class="pub-list">
   <div style="font-size:1em; margin-bottom:20px;">
-    <b>Graduate student or postdoctoral scholar advisee, <i>*Corresponding author</i></b>
+    <b>*Corresponding author, <i>**Graduate student or postdoctoral scholar advisee</i></b>
   </div>
   {% assign all_journals = site.data.publications.journal %}
   {% assign all_confs = site.data.publications.conference %}
@@ -85,7 +85,6 @@ permalink: /publications/
   </div>
   {% for pub in site.data.publications.journal %}
     <li>
-      {{ forloop.index }}. 
       {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
       <b>“{{ pub.title }}”</b>
       {{ pub.journal }}
@@ -103,7 +102,6 @@ permalink: /publications/
   </div>
   {% for pub in site.data.publications.conference %}
     <li>
-      {{ forloop.index }}. 
       {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
       <b>“{{ pub.title }}”</b>
       {{ pub.conference }}
