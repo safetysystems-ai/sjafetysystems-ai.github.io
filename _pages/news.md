@@ -4,7 +4,7 @@ title: "News"
 permalink: /news/
 ---
 
-<h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px;">News and Updates</h2>
+<h2 style="font-size:2em; font-weight:700; margin-bottom:18px;">News and Updates</h2>
 <div class="news-list">
   {% assign news_years = site.data.news | sort: 'year' | reverse %}
   {% for year in news_years %}
