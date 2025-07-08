@@ -19,7 +19,7 @@ permalink: /projects/
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 60px 0 80px 0;
+  padding: 30px 0 300px 0;
 }
 .project-section-bg-completed {
   background: #faf9f8;
@@ -30,7 +30,7 @@ permalink: /projects/
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 60px 0 80px 0;
+  padding: 30px 0 30px 0;
 }
 .project-inner-container {
   max-width: 1200px;
