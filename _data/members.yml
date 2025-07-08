@@ -2,7 +2,7 @@
 
 faculty:
   - name: "Namgyun Kim, PhD., PMP"
-    image: "/assets/images/NK_Headshot.png"
+    image: "/assets/images/NK_2.png"
     positions:
       - "Assistant Professor, Department of Construction Science, Texas A&M University"
       - "Vice President, Korean-American Construction Engineering and Project Management Association (KACEPMA)"
@@ -36,7 +36,7 @@ phds_postdocs:
 current:
   - name: "Jinsol Lee, PhD."
     title: "Postdoctoral Researcher"
-    image: "/assets/images/Blank.png"
+    image: "/assets/images/Jinsol.jpg"
     description: "Focuses on construction automation."
     website: 
     linkedin:
@@ -44,7 +44,7 @@ current:
 
   - name: "Jaehoon Lee"
     title: "PhD Student"
-    image: "/assets/images/Blank.png"
+    image: "/assets/images/Jaehoon.jpg"
     description: "Works on safety systems."
     website: "https://jaehoonblog.com/"
     linkedin: "https://www.linkedin.com/in/jaehoon-lee-93115b25a/?locale=en_US"
