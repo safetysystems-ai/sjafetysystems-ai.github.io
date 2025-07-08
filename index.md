@@ -165,33 +165,34 @@ html {
 
 <!-- Recent News Section (Main Page) -->
 <div class="recent-news-section" style="background:#fff; padding:44px 0 32px 0; margin:0;">
-  <div style="max-width:820px; margin:0 auto;">
-    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px;">Recent News</h2>
-    <ul style="font-size:1.12em; color:#262626; margin-bottom:18px;">
+  <div style="max-width:820px; margin:0 auto; margin-left:3px;">
+    <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
+      Recent News
+    </h2>
+    <ul style="font-size:1.01em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {% assign news2025 = site.data.news | where: "year", 2025 %}
       {% for year in news2025 %}
         {% for item in year.items %}
-          <li style="margin-bottom:7px;">
+          <li style="margin-bottom:7px; line-height:1.65;">
             {% if item.date %}
-              <b>{{ item.date }}</b>
+              <b>{{ item.date }}</b>&nbsp;
             {% endif %}
             {% if item.url %}
               <a href="{{ item.url }}" target="_blank" style="color:#225;">
                 {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
               </a>
             {% else %}
-              {{ item.text | markdownify }}
+              {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
             {% endif %}
           </li>
         {% endfor %}
       {% endfor %}
     </ul>
-    <div style="margin-top:18px; text-align:right;">
-      <a href="/news/" style="font-size:1.09em; color:#225; text-decoration:underline; font-weight:500;">View all news</a>
+    <div style="margin-top:18px; text-align:center;">
+      <a href="/news/" style="font-size:1.05em; color:#222; text-decoration:underline; font-weight:600;">View all news</a>
     </div>
   </div>
 </div>
-
 
 
 <!-- Contact Us Section -->
