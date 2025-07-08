@@ -185,8 +185,12 @@ html {
         {% endfor %}
       {% endfor %}
     </ul>
+    <!-- View all news link: 추가 위치 여기!! -->
+    <div style="text-align:center; margin-bottom:4px;">
+      <a href="/news/" style="font-size:1.05em; color:#222; text-decoration:underline; font-weight:600;">View all news</a>
+    </div>
   </div>
-</div> <!-- Make sure this closes the .recent-news-section -->
+</div>
 
 
 <!-- Contact Us Section -->
