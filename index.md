@@ -42,7 +42,7 @@ excerpt: "Safety Systems AI (SSAI) Lab"
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .project-card {
