@@ -134,7 +134,7 @@ html {
     </div>
     <!-- 로고 삽입부 END -->
 
-    <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Research Projects
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
@@ -167,7 +167,7 @@ html {
 <!-- Contact Us Section -->
 <div id="contact" class="contact-section-bg">
   <div style="max-width:600px; margin:0 auto; text-align:center;">
-    <h2 style="font-size:2em; font-weight:700; margin-bottom:14px;">Contact Us</h2>
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:14px;">Contact Us</h2>
     <div style="font-size:1.07em; color:#333; margin-bottom:28px;">
       Have questions? Interested in collaboration?<br>
       Reach out to us below!
