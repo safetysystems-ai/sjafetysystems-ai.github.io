@@ -175,7 +175,13 @@ html {
             {% if item.date %}
               <b>{{ item.date }}</b>
             {% endif %}
-            {{ item.text | markdownify }}
+            {% if item.url %}
+              <a href="{{ item.url }}" target="_blank" style="color:#225;">
+                {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
+              </a>
+            {% else %}
+              {{ item.text | markdownify }}
+            {% endif %}
           </li>
         {% endfor %}
       {% endfor %}
