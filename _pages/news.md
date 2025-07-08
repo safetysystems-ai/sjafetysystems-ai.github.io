@@ -10,14 +10,21 @@ permalink: /news/
   {% for year in news_years %}
     <h3 style="margin-top:24px;">{{ year.year }}</h3>
     <ul>
-      {% for item in year.items %}
-        <li>
-          {% if item.date %}
-            <span style="font-weight:600;">{{ item.date }}</span>
-          {% endif %}
-          {{ item.text | markdownify }}
-        </li>
+      {% for year in news2025 %}
+        {% for item in year.items %}
+          <li style="margin-bottom:7px;">
+            {% if item.date %}
+              <b>{{ item.date }}</b>
+            {% endif %}
+            {% if item.url %}
+              <a href="{{ item.url }}" target="_blank" style="color:#2233ee;">
+                {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
+              </a>
+            {% else %}
+              {{ item.text | markdownify }}
+            {% endif %}
+          </li>
+        {% endfor %}
       {% endfor %}
     </ul>
-  {% endfor %}
-</div>
+
