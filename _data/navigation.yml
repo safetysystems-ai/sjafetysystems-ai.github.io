@@ -9,8 +9,8 @@ main:
     url: /publication/
   - title: "Contact"
     url: "/#contact"
-  - title: "Media"
-    url: /media/
+  - title: "News"
+    url: /news/
   - title: "Education"
     url: /education/
   - title: "About"
