@@ -12,7 +12,7 @@ permalink: /publications/
   margin-bottom: 32px;
 }
 .pub-cat-btn {
-  background: #2b2979;
+  background: #868e96;
   color: #fff;
   border: none;
   border-radius: 7px 7px 0 0;
@@ -23,7 +23,7 @@ permalink: /publications/
   opacity: 0.85;
 }
 .pub-cat-btn.active, .pub-cat-btn:hover {
-  background: #4947a6;
+  background: #495057;
   opacity: 1;
 }
 .pub-list {
@@ -50,18 +50,17 @@ permalink: /publications/
   <!-- All Papers List -->
 <ol id="pub-all" class="pub-list">
   <div style="font-size:1em; margin-bottom:20px;">
-    <b>*Corresponding author, <i>**Graduate student or postdoctoral scholar advisee</i></b>
+    <i>*Corresponding author, **Graduate student or postdoctoral scholar advisee</i>
   </div>
   {% assign all_journals = site.data.publications.journal %}
   {% assign all_confs = site.data.publications.conference %}
   {% for pub in all_journals %}
     <li>
-      {{ forloop.index }}. 
       {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
-      <b>“{{ pub.title }}”</b>
+      “{{ pub.title }}”
       {{ pub.journal }}
       {% if pub.link %}
-        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#2563eb;">[Link]</a>
       {% endif %}
     </li>
   {% endfor %}
@@ -69,10 +68,10 @@ permalink: /publications/
     <li>
       {{ forloop.index | plus: all_journals.size }}. 
       {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
-      <b>“{{ pub.title }}”</b>
+      “{{ pub.title }}”
       {{ pub.conference }}
       {% if pub.link %}
-        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#2563eb;">[Link]</a>
       {% endif %}
     </li>
   {% endfor %}
@@ -81,15 +80,15 @@ permalink: /publications/
   <!-- Journal Only -->
 <ol id="pub-journal" class="pub-list" style="display:none;">
   <div style="font-size:1em; margin-bottom:20px;">
-    <b>Graduate student or postdoctoral scholar advisee, <i>*Corresponding author</i></b>
+    <i>*Corresponding author, **Graduate student or postdoctoral scholar advisee</i>
   </div>
   {% for pub in site.data.publications.journal %}
     <li>
       {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
-      <b>“{{ pub.title }}”</b>
+      “{{ pub.title }}”
       {{ pub.journal }}
       {% if pub.link %}
-        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#2563eb;">[Link]</a>
       {% endif %}
     </li>
   {% endfor %}
@@ -98,15 +97,15 @@ permalink: /publications/
 <!-- Conference Only -->
 <ol id="pub-conference" class="pub-list" style="display:none;">
   <div style="font-size:1em; margin-bottom:20px;">
-    <b>Graduate student or postdoctoral scholar advisee, <i>*Corresponding author</i></b>
+    <i>*Corresponding author, **Graduate student or postdoctoral scholar advisee</i>
   </div>
   {% for pub in site.data.publications.conference %}
     <li>
       {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
-      <b>“{{ pub.title }}”</b>
+      “{{ pub.title }}”
       {{ pub.conference }}
       {% if pub.link %}
-        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#211dac;">[Link]</a>
+        <a href="{{ pub.link }}" target="_blank" style="margin-left:6px; color:#2563eb;">[Link]</a>
       {% endif %}
     </li>
   {% endfor %}
