@@ -166,10 +166,10 @@ html {
 <!-- Recent News Section (Main Page) -->
 <div class="recent-news-section" style="background:#fff; padding:44px 0 32px 0; margin:0;">
   <div style="max-width:820px; margin:0 auto; margin-left:3px;">
-    <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Recent News
     </h2>
-    <ul style="font-size:1em; color:#262626; margin-bottom:18px; padding-left:18px;">
+    <ul style="font-size:0.5em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {% for year in site.data.news %}
         {% if year.year == 2025 %}
           {% for item in year.items %}
