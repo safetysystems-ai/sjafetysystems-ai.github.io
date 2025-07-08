@@ -73,5 +73,14 @@ current:
     website: 
     linkedin:
     scholar:
-    
-  # ... 추가
+
+former:
+  - name: Park
+    title: Former MS Student
+    image: /assets/members/Blank.png
+    description: "Works on safety systems."
+    website:
+    linkedin: 
+    scholar:
+
+    # ... 기타 정보 ...
