@@ -165,7 +165,7 @@ html {
     </div>
     <div style="margin-bottom:18px;">
       <strong>Email:</strong>
-      <a href="mailto:ssai-lab@yedu" style="color:#2a2a8c; font-weight:500;">ssai@ytamu.edu</a>
+      <a href="mailto:ssai@tamu.edu" style="color:#2a2a8c; font-weight:500;">ssai@tamu.edu</a>
     </div>
     <div style="margin-bottom:18px;">
       <strong>Address:</strong>
