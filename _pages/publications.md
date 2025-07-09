@@ -38,7 +38,57 @@ permalink: /publications/
 @media (max-width: 850px) {
   .pub-list { padding: 20px 6vw; }
 }
+
+.publications-header-image {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 280px;
+  background: url('/assets/images/Kyle_Field.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.publications-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30,30,30,0.20);
+  z-index: 1;
+}
+.publications-header-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-left: 7vw;
+  margin-right: auto;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.14);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .publications-header-image { height: 150px; }
+  .publications-header-text { font-size: 1.5em; margin-left: 18px;}
+}
+
+  
 </style>
+
+<div class="publications-header-image">
+  <div class="publications-header-overlay"></div>
+  <div class="publications-header-text">
+    <span>Publications</span>
+  </div>
+</div>
+
 
 <div style="padding:44px 0 0 0;">
   <div class="pub-cat-btns">
