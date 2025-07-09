@@ -12,7 +12,7 @@ permalink: /projects/
 }
 .project-section-bg {
   background: #f5f6f7;
-  /*min-height: 100vh; */
+  min-height: unset;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -38,10 +38,11 @@ permalink: /projects/
   padding: 0 32px;
 }
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
-  justify-content: flex-start;
+  justify-items: center; /* 카드 가운데 정렬 */
+  justify-content: start; /* 전체 컨테이너 왼쪽 정렬 */
 }
 .project-card {
   width: 320px;
