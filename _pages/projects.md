@@ -40,7 +40,7 @@ permalink: /projects/
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
+  gap: 24px;
   justify-items: center; /* 카드 가운데 정렬 */
   justify-content: start; /* 전체 컨테이너 왼쪽 정렬 */
 }
@@ -49,7 +49,7 @@ permalink: /projects/
 .project-grid-left {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
+  gap: 24px;
   justify-items: start; /* 항상 왼쪽 정렬 */
   justify-content: start;
 }
@@ -117,7 +117,7 @@ permalink: /projects/
 <!-- Project in Progress Section -->
 <div class="project-section-bg">
   <div class="project-inner-container">
-    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
       Project in Progress
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
@@ -147,7 +147,7 @@ permalink: /projects/
 <!-- Completed Projects Section -->
 <div class="project-section-bg-completed">
   <div class="project-inner-container">
-    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
       Completed Projects
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
