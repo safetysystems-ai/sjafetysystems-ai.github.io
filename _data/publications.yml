@@ -46,9 +46,79 @@ journal:
     link: "https://doi.org/10.1016/j.autcon.2020.103390"
   # ... 기타 저널 논문
 conference:
+  - authors: "Lee, J.**, Ko, T., Huang, K., Park, J., Kim, N.* "
+    year: 2025
+    title: "The Impact of Low-Quality Accident Reports on the Performance of Construction Safety AI Models"
+    conference: "International Conference on Computing in Civil Engineering (i3CE 2025), May 11-14, 2025, New Orleans, LA"
+    link: 
+  - authors: "Ray, U., Park, J. *, Alvarez, L., Kim, N. "
+    year: 2025
+    title: "Prompt Engineering in Construction Safety: A Comparative Study of Zero-Shot, One-Shot, and Few-Shot Strategies for Accident Classification"
+    conference: "International Conference on Computing in Civil Engineering (i3CE 2025), May 11-14, 2025, New Orleans, LA"
+    link:
   - authors: "Lee, J.**, Ahn, C.R., Lee, H, Jeon, J., Kim, N.*"
     year: 2024
     title: "Detecting Activities Exposing Construction Workers to the Risk of Developing Carpal Tunnel Syndrome"
-    conference: "Construction Research Congress2024, ASCE, March 20-23, 2024, Des Moines, IA (Best Paper Award)"
+    conference: "Construction Research Congress 2024, ASCE, March 20-23, 2024, Des Moines, IA (Best Paper Award)"
     link: "https://doi.org/10.1061/9780784485293.053"
+  - authors: "Das, N., Lee, J.*, Kim, N."
+    year: 2024
+    title: "Exploring Individual Variances in Learning Process During Immersive Safety Training for Construction: A Comprehensive Review of VR/AR-Based Safety Training"
+    conference: "International Conference on Computing in Civil Engineering (i3CE 2024), July 28-31, 2023, Pittsburgh, PA"
+    link:
+  - authors: "Park, S., Jung, K., Jeon, J.*, Kim, N."
+    year: 2024
+    title: "Development of a Framework for Generative AI-based Safety Management via Prompt Engineering"
+    conference: "International Conference on Computing in Civil Engineering (i3CE 2024), July 28-31, 2023, Pittsburgh, PA"
+    link:
+  - authors: "Kim, T., Kim, S., Kim, N., Kim., H*"
+    year: 2023
+    title: "ChatGPT in the Construction Domain: Opportunities, Risks, and Recommendations"
+    conference: "Proceedings of the 5th International Conference on Civil and Building Engineering Informatics (ICCBEI 2023), July 19-21, 2023, Bangkok, Thailand"
+    link:
+  - authors: "Uhm, M., Shin G., Kim. H., Kim, N., Kim, H.*"
+    year: 2023
+    title: "Evaluating the Economic Impact of Preventive Treatment Strategies for Municipal Highways"
+    conference: "International Conference on Computing in Civil Engineering (i3CE 2023) June 25-28, 2023, Corvallis, OR"
+    link:  
+  - authors: "Kim, N., Grégoire, L., Anderson, B. A., Suermann, P., and Ahn, C. R.*"
+    year: 2022
+    title: "How Personality Affects Construction Workers’ Vigilance to Repeatedly Exposed Struck-by Hazards in Road Work Zones"
+    conference: "The 22nd International Conference on Construction Applications of Virtual Reality (CONVR 2022), November 16-19, 2022, Seoul, South Korea"
+    link:  
+  - authors: "Kim, M., Heo, C., Jeong, W., Kim, N., Park, M., Ahn, C. R.*"
+    year: 2022
+    title: "Construction Workers’ Trust Towards Robot Co-workers and Human Co-workers"
+    conference: "The 22nd International Conference on Construction Applications of Virtual Reality (CONVR 2022), November 16-19, 2022, Seoul, South Korea"
+    link:  
+  - authors: "Park, S., Kim. N., Ahn, C. R., Kim, H.*"
+    year: 2022
+    title: "Effectiveness of Experiential Safety Training in Physical Facility Compared with VR-based Safety Training"
+    conference: "The 22nd International Conference on Construction Applications of Virtual Reality (CONVR 2022), November 16-19, 2022, Seoul, South Korea"
+    link:  
+  - authors: "Kim, N., Grégoire, L., Anderson, B. A., and Ahn, C. R.*"
+    year: 2022
+    title: "Construction Workers’ Sensation-Seeking and Inattentiveness to Warning Alarms from Construction Vehicles"
+    conference: "International Conference on Construction Engineering and Project Management 2022 (ICCEPM 2022), June 20-23, 2022, Las Vegas, NV"
+    link:
+  - authors: "Kim, N., Ahn, C. R.*, Miller, A., Dibello, R., Lobello, D., Oh, S., and McNamara, A."
+    year: 2022
+    title: "Enhancing Workers’ Vigilance to Electrical Hazards by Demonstrating a Simulated Electrocution Accident in a Virtual Environment"
+    conference: "Construction Research Congress 2022, ASCE, March 9-12, 2022, Arlington, VA"
+    link: "https://ascelibrary.org/doi/abs/10.1061/JCCEE5.CPENG-6283"
+  - authors: "Lee, H., Kim, N., and Ahn, C. R.*"
+    year: 2021
+    title: "Detecting Hook Attachments of a Safety Harness Using Inertial Measurement Unit Sensors"
+    conference: "38th International Symposium on Automation and Robotics in Construction (ISARC 2021), November 3-4, 2021, Dubai, United Arab Emirates"
+    link: "https://doi.org/10.22260/ISARC2021/0079" 
+  - authors: "Kim, N., and Ahn, C. R.*"
+    year: 2020
+    title: "Using a Virtual Reality-based Experiment Environment to Examine Risk Habituation in Construction Safety"
+    conference: "37th International Symposium on Automation and Robotics in Construction (ISARC 2020), October 27-28, 2020, Kitakyushu, Japan"
+    link: "https://doi.org/10.22260/ISARC2020/0161"  
+  - authors: "Lee, H., Yang, K., Kim, N., and Ahn, C. R.*"
+    year: 2020
+    title: "A Hybrid CNN-LSTM Model for Detecting Excessive Load Carrying from Workers’ Body Movements"
+    conference: "Construction Research Congress 2020. ASCE, March 8-10, 2020, Tempe, AZ"
+    link: "https://ascelibrary.org/doi/abs/10.1061/9780784482865.120"   
   # ... 기타 컨퍼런스 논문
