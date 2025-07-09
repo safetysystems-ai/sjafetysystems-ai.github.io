@@ -120,6 +120,24 @@ html {
   margin-right: -50vw;
   padding: 60px 0 80px 0;
 }
+.section-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 18px;
+  color: #500000;
+  margin-left: 0;
+}
+
+.section-underline {
+  width: 56px;
+  height: 4px;
+  background: #999;
+  border-radius: 2px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+  
 </style>
 
 <!-- Projects Section (Main Page) -->
@@ -166,9 +184,8 @@ html {
 <!-- Recent News Section (Main Page) -->
 <div class="recent-news-section" style="background:#fff; padding:15px 0 32px 0; margin:0;">
   <div style="max-width:1000px; margin:0 auto;">
-    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
-      Recent News
-    </h2>
+    <h2 class="section-title">Recent News</h2>
+    <span class="section-underline"></span>
     <ul style="font-size:0.8em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {% assign news2025 = site.data.news | where: "year", 2025 %}
       {% for year in news2025 %}
