@@ -126,7 +126,7 @@ h2.section-title {
 
 <div class="members-header-image">
   <div class="members-header-overlay"></div>
-  <div class="members-header-text">
+  <div class="members-header-text members-header-text-right">
     <span>Members</span>
   </div>
 </div>
