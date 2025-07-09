@@ -40,9 +40,24 @@ permalink: /about/
   height: 100%;
   text-align: left;
 }
+.about-main-content {
+  max-width: 950px;
+  margin: 36px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
 @media (max-width: 800px) {
   .about-header-image { height: 160px; }
   .about-header-text { font-size: 1.5em; margin-left: 14px;}
+}
+@media (max-width: 600px) {
+  .about-main-content {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
 }
 </style>
 
@@ -55,7 +70,7 @@ permalink: /about/
 </div>
 
 <!-- About 본문 -->
-<div style="max-width:950px; margin:36px auto 0 auto; display:flex; flex-direction:column; align-items:center;">
+<div class="about-main-content">
   <img src="/assets/images/Logo_full_Blue.png"
        alt="Safety Systems AI Lab Logo"
        style="width:900px; max-width:98vw; height:auto; margin-bottom:30px; margin-top:54px" />
@@ -66,3 +81,4 @@ permalink: /about/
     The Safety Systems.AI Lab is dedicated to advancing safety in both workplaces and everyday life by augmenting human cognitive and physical capabilities to prevent accidents and injuries. Our research integrates AI, VR/AR, and advanced sensing technologies to transform how people learn about, manage, and respond to safety risks. By combining insights from cognitive science, engineering, and emerging technologies, we develop intelligent systems that enhance awareness, decision-making, and the ability to respond effectively to safety challenges across diverse environments.
   </div>
 </div>
+
