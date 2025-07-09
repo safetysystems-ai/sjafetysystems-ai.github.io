@@ -8,7 +8,7 @@ header:
   overlay_filter: 0.2
   actions:
     - label: "Learn More"
-      url: "/#about"
+      url: "/about/"
 excerpt: "Safety Systems.AI (SSAI) Lab"
 ---
 
