@@ -105,7 +105,7 @@ h2.section-title {
 .members-header-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(30,30,30,0.20); /* overlay_filter: 0.2 */
+  background: rgba(30,30,30,0.30); /* overlay_filter: 0.2 */
   z-index: 1;
 }
 .members-header-text {
@@ -120,14 +120,15 @@ h2.section-title {
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;   /* 오른쪽 정렬 */
+  justify-content: flex-start;   /* 오른쪽 정렬 */
   width: 100%;
   height: 100%;
-  text-align: right;
+  text-align: left;
 }
+
 @media (max-width: 800px) {
   .members-header-image { height: 180px; }
-  .members-header-text { font-size: 1.7em; margin-right: 18px;}
+  .members-header-text { font-size: 1.7em; margin-left: 18px;}
 }
 
   
