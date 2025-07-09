@@ -120,25 +120,7 @@ html {
   margin-right: -50vw;
   padding: 60px 0 80px 0;
 }
-  
-.section-title {
-  font-size: 1.5em;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 8px;
-  margin-left: 0;
-  color: inherit;
-}
-
-.section-underline {
-  width: 56px;
-  height: 2px;
-  background: #999;
-  border-radius: 2px;
-  margin: 0 auto 20px auto;
-  display: block;
-}
-  
+   
 </style>
 
 <!-- Projects Section (Main Page) -->
@@ -188,7 +170,6 @@ html {
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
       Recent News
     </h2>
-    <span class="section-underline"></span>
     <ul style="font-size:0.8em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {% assign news2025 = site.data.news | where: "year", 2025 %}
       {% for year in news2025 %}
