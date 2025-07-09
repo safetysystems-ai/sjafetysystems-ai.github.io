@@ -124,8 +124,8 @@ html {
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 18px;
-  color: #500000;
+  margin-bottom: 8px;
+  color: #999;
   margin-left: 0;
 }
 
