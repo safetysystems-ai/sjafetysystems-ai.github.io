@@ -86,20 +86,20 @@ permalink: /news/
   color: #fff;
   font-size: 2.5em;
   font-weight: 700;
-  margin-right: 7vw;
-  margin-left: auto;
+  margin-left: 7vw;
+  margin-right: auto;
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;  /* ← 왼쪽 정렬 */
   width: 100%;
   height: 100%;
-  text-align: right;
+  text-align: left;
 }
 @media (max-width: 800px) {
   .news-header-image { height: 160px; }
-  .news-header-text { font-size: 1.5em; margin-right: 14px;}
+  .news-header-text { font-size: 1.5em; margin-left: 14px;}
 }
 </style>
 
