@@ -11,7 +11,7 @@ main:
     url: "/#contact"
   - title: "News"
     url: /news/
-  - title: "Education"
-    url: /education/
+  - title: "Teaching"
+    url: /teaching/
   - title: "About"
     url: /about/
