@@ -122,40 +122,53 @@ permalink: /projects/
   margin-top: 0;
   letter-spacing: 0.01em;
 }
-
+.projects-header-image {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 320px;  /* 필요시 조정 */
+  background: url('/assets/images/Aggie_Park.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.projects-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30,30,30,0.20); /* overlay_filter: 0.2 와 유사 */
+  z-index: 1;
+}
+.projects-header-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  margin-left: 5vw;   /* 왼쪽 정렬, 값 조절 가능 */
+  text-shadow: 0 2px 16px rgba(0,0,0,0.14);
+  letter-spacing: 1px;
+}
+@media (max-width: 800px) {
+  .projects-header-image { height: 180px; }
+  .projects-header-text { font-size: 1.8em; margin-left: 18px;}
+}
 
 </style>
-<!-- Hero section -->
-<div style="
-  width:100vw; 
-  margin-left:calc(50% - 50vw); 
-  position:relative; 
-  height:320px;
-  background: url('/assets/images/Aggie_Park.jpg') center center/cover no-repeat;
-  display:flex; 
-  align-items: center;
-  justify-content: center;
-">
-  <h1 style="
-    color: #fff; 
-    font-size: 2.8em; 
-    font-weight: 800; 
-    text-shadow: 0 4px 18px rgba(20,20,20,0.26), 0 0px 1px #222;
-    letter-spacing: 0.02em;
-    margin:0;
-    text-align: center;
-    width: 100%;
-  ">
-    Projects
-  </h1>
-</div>
 
+<div class="projects-header-image">
+  <div class="projects-header-overlay"></div>
+  <div class="projects-header-text">
+    <span>Projects</span>
+  </div>
+</div>
 
 
 <!-- Project in Progress Section -->
 <div class="project-section-bg">
   <div class="project-inner-container">
-    <h2 class="section-title">Projects in Progress</h2>>
+    <h2 class="section-title">Projects in Progress</h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid">
       {% assign ongoing_projects = site.projects | where: "status", "ongoing" %}
