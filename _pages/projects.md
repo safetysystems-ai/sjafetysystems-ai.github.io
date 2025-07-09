@@ -125,6 +125,32 @@ permalink: /projects/
 
 
 </style>
+<!-- Hero section -->
+<div style="
+  width:100vw; 
+  margin-left:calc(50% - 50vw); 
+  position:relative; 
+  height:320px;
+  background: url('/assets/images/Aggie_Park.jpg') center center/cover no-repeat;
+  display:flex; 
+  align-items: center;
+  justify-content: center;
+">
+  <h1 style="
+    color: #fff; 
+    font-size: 2.8em; 
+    font-weight: 800; 
+    text-shadow: 0 4px 18px rgba(20,20,20,0.26), 0 0px 1px #222;
+    letter-spacing: 0.02em;
+    margin:0;
+    text-align: center;
+    width: 100%;
+  ">
+    Projects
+  </h1>
+</div>
+
+
 
 <!-- Project in Progress Section -->
 <div class="project-section-bg">
