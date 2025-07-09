@@ -282,40 +282,39 @@ html {
       <strong>Address:</strong>
       <span>454 Throckmorton St. College Station, TX 77843</span>
     </div>
-    <!-- 지도 + 로고 + 버튼 묶음 시작 -->
-    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; margin: 18px 0 12px 0; width:100%;">
-      <!-- 지도 -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.3265252776173!2d-96.34143144218953!3d30.61550314807618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86468399d9df49cb%3A0x9841ee504f247ca6!2sNagle%20Hall%2C%20454%20Throckmorton%20St%2C%20College%20Station%2C%20TX%2077843!5e0!3m2!1sen!2sus!4v1751918635059!5m2!1sen!2sus"
-        width="320"
-        height="320"
-        style="border:0; border-radius: 14px;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+<!-- 지도 + 로고 + 버튼 묶음 시작 -->
+<div style="display:flex; flex-direction:column; align-items:center; gap:14px; margin: 18px 0 12px 0; width:100%;">
+  <!-- 지도 -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.3265252776173!2d-96.34143144218953!3d30.61550314807618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86468399d9df49cb%3A0x9841ee504f247ca6!2sNagle%20Hall%2C%20454%20Throckmorton%20St%2C%20College%20Station%2C%20TX%2077843!5e0!3m2!1sen!2sus!4v1751918635059!5m2!1sen!2sus"
+    width="480"
+    height="320"
+    style="border:0; border-radius: 14px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 
-      <!-- 연구실 로고 -->
-      <img src="/assets/images/Logo_Blue.png"
-           alt="SSAI Lab Logo"
-           style="width: 240px; height:auto; margin-bottom:0;" />
+  <!-- 연구실 로고 (아래 margin이 아니라 위에 margin 추가) -->
+  <img src="/assets/images/Logo_Blue.png"
+       alt="SSAI Lab Logo"
+       style="width: 240px; height:auto; margin-top: 32px; margin-bottom: 5px;" />
 
-      <!-- Join Us Button -->
-      <div class="joinus-btn-wrap">
-        <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration:none;">
-          <button class="joinus-btn" type="button" tabindex="0">
-            <div class="joinus-btn-bg">
-              <div class="joinus-btn-box">
-                <svg width="28" height="28" stroke="#3d4853" fill="none" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="14" cy="14" r="11.5"/>
-                  <polyline points="12,10 16,14 12,18"/>
-                </svg>
-              </div>
-              <span class="joinus-btn-label">Join us</span>
-            </div>
-          </button>
-        </a>
-      </div>
-    <!-- 지도 + 로고 + 버튼 묶음 끝 -->
+  <!-- Join Us Button -->
+  <div class="joinus-btn-wrap">
+    <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration:none;">
+      <button class="joinus-btn" type="button" tabindex="0">
+        <div class="joinus-btn-bg">
+          <div class="joinus-btn-box">
+            <svg width="28" height="28" stroke="#3d4853" fill="none" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="14" cy="14" r="11.5"/>
+              <polyline points="12,10 16,14 12,18"/>
+            </svg>
+          </div>
+          <span class="joinus-btn-label">Join us</span>
+        </div>
+      </button>
+    </a>
   </div>
+</div>
 </div>
