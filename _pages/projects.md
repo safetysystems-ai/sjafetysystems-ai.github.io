@@ -115,7 +115,7 @@ permalink: /projects/
 
 .section-title {
   text-align: center;
-  color: #999999;
+  color: inherit;
   font-weight: 600;
   font-size: 1.5em;
   margin-bottom: 8px;
@@ -123,26 +123,13 @@ permalink: /projects/
   letter-spacing: 0.01em;
 }
 
-.section-underline {
-  width: 56px;
-  height: 4px;
-  background: #999999;
-  border-radius: 2px;
-  margin: 0 auto 20px auto;
-  display: block;
-}
 
-@media (max-width: 600px) {
-  .section-underline { width: 36px; }
-}
-  
 </style>
 
 <!-- Project in Progress Section -->
 <div class="project-section-bg">
   <div class="project-inner-container">
     <h2 class="section-title">Projects in Progress</h2>>
-    <div class="section-title-underline"><span></span></div>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid">
       {% assign ongoing_projects = site.projects | where: "status", "ongoing" %}
@@ -171,7 +158,6 @@ permalink: /projects/
 <div class="project-section-bg-completed">
   <div class="project-inner-container">
     <h2 class="section-title">Completed Projects</h2>
-    <div class="section-title-underline"><span></span></div>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid-left">
       {% assign completed_projects = site.projects | where: "status", "completed" %}
