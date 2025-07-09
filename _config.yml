@@ -272,7 +272,7 @@ plugins:
 collections:
   projects:
     output: true
-    permalink: /projects/:name/
+    permalink: /research/:name/
 
 
 # mimic GitHub Pages with --safe
