@@ -144,7 +144,7 @@ permalink: /projects/
   position: relative;
   z-index: 2;
   color: #fff;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 700;
   margin-left: 5vw;   /* 왼쪽 정렬, 값 조절 가능 */
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
@@ -160,7 +160,7 @@ permalink: /projects/
 <div class="projects-header-image">
   <div class="projects-header-overlay"></div>
   <div class="projects-header-text">
-    <span>Projects</span>
+    <span>Research Projects</span>
   </div>
 </div>
 
