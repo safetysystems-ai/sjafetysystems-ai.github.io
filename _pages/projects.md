@@ -112,6 +112,30 @@ permalink: /projects/
   .project-inner-container { max-width: 95vw; }
   .project-card { width: 96vw; max-width: 380px;}
 }
+
+.section-title {
+  text-align: center;
+  color: #999999;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  margin-top: 0;
+  letter-spacing: 0.01em;
+}
+
+.section-underline {
+  width: 56px;
+  height: 4px;
+  background: #999999;
+  border-radius: 2px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .section-underline { width: 36px; }
+}
+  
 </style>
 
 <!-- Project in Progress Section -->
