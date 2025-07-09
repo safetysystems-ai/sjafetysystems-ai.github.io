@@ -19,7 +19,7 @@ permalink: /projects/
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 30px 0 300px 0;
+  padding: 30px 0 30px 0;
 }
 .project-section-bg-completed {
   background: #faf9f8;
@@ -106,7 +106,7 @@ permalink: /projects/
 <!-- Project in Progress Section -->
 <div class="project-section-bg">
   <div class="project-inner-container">
-    <h2 style="font-size:2em; font-weight:700; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.7em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Project in Progress
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
@@ -136,7 +136,7 @@ permalink: /projects/
 <!-- Completed Projects Section -->
 <div class="project-section-bg-completed">
   <div class="project-inner-container">
-    <h2 style="font-size:1.7em; font-weight:700; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.7em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Completed Projects
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
