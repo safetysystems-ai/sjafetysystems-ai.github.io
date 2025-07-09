@@ -252,7 +252,7 @@ html {
        style="width: 240px; height:auto; margin-top: 32px; margin-bottom: 5px;" />
 
   <!-- Join Us Button -->
-  <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration: none;">
+  <a href="https://forms.gle/x9q3HTGj2SFoi5H9A" target="_blank" style="text-decoration: none;">
     <div style="
       display: flex;
       align-items: center;
