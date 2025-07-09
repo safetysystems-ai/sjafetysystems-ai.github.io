@@ -137,15 +137,15 @@ html {
 
 <!-- About Section (Main Page, 풀로고+미션/소개) -->
 <div id="about" class="about-section-bg">
-  <div style="max-width:900px; margin:0 auto; display:flex; flex-direction:column; align-items:center;">
+  <div style="max-width:950px; margin:0 auto; display:flex; flex-direction:column; align-items:center;">
     <img src="/assets/images/Logo_full_Blue.png"
          alt="Safety Systems AI Lab Logo"
          style="width:900px; max-width:98vw; height:auto; margin-bottom:22px;" />
-    <div style="font-size:1.28em; color:#3d4853; font-weight:500; text-align:center; max-width:700px; margin-bottom:8px;">
+    <div style="font-size:1.15em; color:#3d4853; font-weight:500; text-align:center; max-width:700px; margin-bottom:8px;">
       Augmenting the Human Cognitive and Physical Capabilities for Safety
     </div>
-    <div style="font-size:1.07em; color:#61697a; text-align:center; max-width:700px;">
-      <em>The Safety Systems.AI Lab is dedicated to advancing safety in both workplaces and everyday life by augmenting human cognitive and physical capabilities to prevent accidents and injuries. Our research integrates AI, VR/AR, and advanced sensing technologies to transform how people learn about, manage, and respond to safety risks. By combining insights from cognitive science, engineering, and emerging technologies, we develop intelligent systems that enhance awareness, decision-making, and the ability to respond effectively to safety challenges across diverse environments.</em>
+    <div style="font-size:1.07em; color:#61697a; text-align:center; max-width:900px;margin-bottom:30px;">
+      The Safety Systems.AI Lab is dedicated to advancing safety in both workplaces and everyday life by augmenting human cognitive and physical capabilities to prevent accidents and injuries. Our research integrates AI, VR/AR, and advanced sensing technologies to transform how people learn about, manage, and respond to safety risks. By combining insights from cognitive science, engineering, and emerging technologies, we develop intelligent systems that enhance awareness, decision-making, and the ability to respond effectively to safety challenges across diverse environments.
     </div>
   </div>
 </div>
