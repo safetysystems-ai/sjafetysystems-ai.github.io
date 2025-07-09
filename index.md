@@ -140,12 +140,12 @@ html {
   <div style="max-width:900px; margin:0 auto; display:flex; flex-direction:column; align-items:center;">
     <img src="/assets/images/Logo_full_Blue.png"
          alt="Safety Systems AI Lab Logo"
-         style="width:520px; max-width:96vw; height:auto; margin-bottom:22px;" />
+         style="width:900px; max-width:98vw; height:auto; margin-bottom:22px;" />
     <div style="font-size:1.28em; color:#3d4853; font-weight:500; text-align:center; max-width:700px; margin-bottom:8px;">
-      Build Trustworthy AI Generalists for Critical Applications at Scale
+      Augmenting the Human Cognitive and Physical Capabilities for Safety
     </div>
     <div style="font-size:1.07em; color:#61697a; text-align:center; max-width:700px;">
-      <em>We innovate next-generation AI safety systems for complex, real-world environments, empowering safe, scalable, and responsible AI adoption across industries.</em>
+      <em>The Safety Systems.AI Lab is dedicated to advancing safety in both workplaces and everyday life by augmenting human cognitive and physical capabilities to prevent accidents and injuries. Our research integrates AI, VR/AR, and advanced sensing technologies to transform how people learn about, manage, and respond to safety risks. By combining insights from cognitive science, engineering, and emerging technologies, we develop intelligent systems that enhance awareness, decision-making, and the ability to respond effectively to safety challenges across diverse environments.</em>
     </div>
   </div>
 </div>
