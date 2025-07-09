@@ -198,75 +198,76 @@ html {
 </div>
 
 
-<!-- Contact Us Section -->
-<div id="contact" class="contact-section-bg">
-  <div style="max-width:700px; margin:0 auto; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+<!-- Contact Us Section (with Lab Logo & Join Us Button 바로 아래에) -->
+<div id="contact" class="contact-section-bg" style="padding-bottom: 0;">
+  <div style="
+      max-width:700px; margin:0 auto; text-align:center;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;">
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:14px;">Contact Us</h2>
     <div style="font-size:1.07em; color:#333; margin-bottom:28px;">
       Have questions? Interested in collaboration?<br>
       Reach out to us below!
     </div>
-    <div style="margin-bottom:18px;">
+    <div style="margin-bottom:14px;">
       <strong>Email:</strong>
       <a href="mailto:ssai@tamu.edu" style="color:#2a2a8c; font-weight:500;">ssai@tamu.edu</a>
     </div>
-    <div style="margin-bottom:18px;">
+    <div style="margin-bottom:14px;">
       <strong>Address:</strong>
       <span>454 Throckmorton St. College Station, TX 77843</span>
     </div>
-    <div style="margin: 30px 0;">
+    <!-- 지도 + 로고 + 버튼 묶음 시작 -->
+    <div style="display:flex; flex-direction:column; align-items:center; gap:14px; margin: 18px 0 12px 0; width:100%;">
+      <!-- 지도 -->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.3265252776173!2d-96.34143144218953!3d30.61550314807618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86468399d9df49cb%3A0x9841ee504f247ca6!2sNagle%20Hall%2C%20454%20Throckmorton%20St%2C%20College%20Station%2C%20TX%2077843!5e0!3m2!1sen!2sus!4v1751918635059!5m2!1sen!2sus"
-        width="100%"
-        height="300"
+        width="270"
+        height="270"
         style="border:0; border-radius: 14px;"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
+
+      <!-- 연구실 로고 -->
+      <img src="/assets/images/Logo_Blue.png"
+           alt="SSAI Lab Logo"
+           style="width: 120px; height:auto; margin-bottom:0;" />
+
+      <!-- Join Us Button -->
+      <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration: none;">
+        <div style="
+          display: flex;
+          align-items: center;
+          padding: 0 32px 0 12px;
+          background: #19213b;
+          color: #fff;
+          border-radius: 26px;
+          height: 54px;
+          min-width: 156px;
+          font-size: 1.15em;
+          font-weight: 600;
+          box-shadow: 0 2px 12px rgba(30,30,60,0.12);
+          transition: background 0.17s, box-shadow 0.17s;
+          cursor: pointer;
+          gap: 18px;
+          margin-bottom: 0;
+        "
+        onmouseover="this.style.background='#30407a'; this.style.boxShadow='0 6px 28px #b3c2f5';"
+        onmouseout="this.style.background='#19213b'; this.style.boxShadow='0 2px 12px rgba(30,30,60,0.12)';"
+        >
+          <div style="
+            width:38px; height:38px; border-radius:12px; background:#fff;
+            display:flex; align-items:center; justify-content:center; margin-right:12px;">
+            <svg width="20" height="20" stroke="#222e4d" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="10" cy="10" r="9"/>
+              <polyline points="8,6 12,10 8,14"/>
+            </svg>
+          </div>
+          Join us
+        </div>
+      </a>
     </div>
+    <!-- 지도 + 로고 + 버튼 묶음 끝 -->
   </div>
-</div>
-
-
-<!-- 연구실 로고 & Join Us 버튼 Section -->
-<div style="display: flex; flex-direction: column; align-items: center; margin-top: 36px; margin-bottom: 12px;">
-  <!-- 연구실 로고 -->
-  <img src="/assets/images/Logo_Blue.png"
-       alt="SSAI Lab Logo"
-       style="width: 140px; height:auto; margin-bottom: 18px;" />
-
-  <!-- Join Us Button -->
-  <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration: none;">
-    <div style="
-      display: flex;
-      align-items: center;
-      padding: 0 34px 0 14px;
-      background: #19213b;
-      color: #fff;
-      border-radius: 26px;
-      height: 60px;
-      min-width: 180px;
-      font-size: 1.25em;
-      font-weight: 600;
-      box-shadow: 0 2px 12px rgba(30,30,60,0.12);
-      transition: background 0.17s, box-shadow 0.17s;
-      cursor: pointer;
-      gap: 22px;
-      margin-bottom: 8px;
-    "
-    onmouseover="this.style.background='#30407a'; this.style.boxShadow='0 6px 28px #b3c2f5';"
-    onmouseout="this.style.background='#19213b'; this.style.boxShadow='0 2px 12px rgba(30,30,60,0.12)';"
-    >
-      <div style="
-        width:46px; height:46px; border-radius:14px; background:#fff;
-        display:flex; align-items:center; justify-content:center; margin-right:12px;">
-        <svg width="26" height="26" stroke="#222e4d" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="13" cy="13" r="11.5"/>
-          <polyline points="11,9 15,13 11,17"/>
-        </svg>
-      </div>
-      <span>Join us</span>
-    </div>
-  </a>
 </div>
