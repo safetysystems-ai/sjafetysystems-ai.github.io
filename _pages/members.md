@@ -31,7 +31,7 @@ h2.section-title {
   text-align: center;
   margin-left: 0;
   margin-bottom: 38px;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .member-list-container {
@@ -136,7 +136,7 @@ h2.section-title {
 <div class="members-header-image">
   <div class="members-header-overlay"></div>
   <div class="members-header-text">
-    <span>Members</span>
+    <span>People</span>
   </div>
 </div>
 
