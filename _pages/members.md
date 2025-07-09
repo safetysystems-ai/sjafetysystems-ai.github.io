@@ -88,7 +88,48 @@ h2.section-title {
   color: #666;
   margin-bottom: 9px;
 }
+
+.members-header-image {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 320px;
+  background: url('/assets/images/12th_Man.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.members-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30,30,30,0.20); /* overlay_filter: 0.2 */
+  z-index: 1;
+}
+.members-header-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-left: 5vw;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.14);
+  letter-spacing: 1px;
+}
+@media (max-width: 800px) {
+  .members-header-image { height: 180px; }
+  .members-header-text { font-size: 1.8em; margin-left: 18px;}
+}
+  
 </style>
+
+<div class="members-header-image">
+  <div class="members-header-overlay"></div>
+  <div class="members-header-text">
+    <span>Members</span>
+  </div>
+</div>
 
 <!-- Director Section -->
 <h2 class="section-title">Director</h2>
