@@ -115,7 +115,7 @@ h2.section-title {
   font-size: 2.5em;
   font-weight: 700;
   margin-right: auto;
-  margin-left: 7v;      
+  margin-left: 7vw;      
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
   letter-spacing: 1px;
   display: flex;
