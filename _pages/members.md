@@ -114,8 +114,9 @@ h2.section-title {
   color: #fff;
   font-size: 2.5em;
   font-weight: 700;
-  margin-right: 5vw;
+  margin-left: 5vw;
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
+  align-items: right;
   letter-spacing: 1px;
 }
 @media (max-width: 800px) {
