@@ -98,7 +98,7 @@ h2.section-title {
   margin-left: -50vw;
   margin-right: -50vw;
   height: 320px;
-  background: url('/assets/images/12th_Man.jpg') center center / cover no-repeat;
+  background: url('/assets/images/12th_Man_02.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
 }
