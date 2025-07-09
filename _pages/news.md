@@ -27,19 +27,20 @@ permalink: /news/
   font-family: 'Segoe UI', Arial, sans-serif;
   flex-shrink: 0;
 }
-.news-month {
+.news-day {
   font-size: 2.3em;
   font-weight: 800;
   color: #2c2e30;
   letter-spacing: 0.01em;
   line-height: 1;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
-.news-year {
+.news-month-year {
   font-size: 1.09em;
   color: #7a7a7a;
   font-weight: 500;
   letter-spacing: 0.04em;
+  text-align: center;
 }
 .news-content-col {
   flex: 1;
@@ -57,8 +58,8 @@ permalink: /news/
 @media (max-width: 650px) {
   .news-flex-item { flex-direction: column; padding: 20px 0 14px 0;}
   .news-date-col { flex-direction: row; width: 100%; margin-bottom: 8px;}
-  .news-month { font-size: 1.5em; margin-bottom:0; margin-right: 16px;}
-  .news-year { font-size: 1em; }
+  .news-day { font-size: 1.5em; margin-bottom:0; margin-right: 16px;}
+  .news-month-year { font-size: 1em; }
   .news-content-col { padding-left:0; }
 }
 </style>
@@ -70,28 +71,32 @@ permalink: /news/
   {%- assign all_news = "" -%}
   {%- for year in site.data.news -%}
     {%- for item in year.items -%}
-      {%- assign all_news = all_news | append: "|" | append: item.order | append: "~~~" | append: item.date | append: "~~~" | append: item.text | append: "~~~" | append: item.url | append: "~~~" | append: item.link_text -%}
+      {%- assign all_news = all_news | append: "|" | append: item.date_full | append: "~~~" | append: item.text | append: "~~~" | append: item.url | append: "~~~" | append: item.link_text -%}
     {%- endfor -%}
   {%- endfor -%}
   {%- assign all_news = all_news | remove_first: "|" | split: "|" -%}
   {%- assign all_news = all_news | sort: "" | reverse -%}
   {%- for news_item in all_news -%}
     {%- assign parts = news_item | split: "~~~" -%}
-    {%- assign order = parts[0] -%}
-    {%- assign year = order | split: "-" | first -%}
-    {%- assign month_num = order | split: "-" | last -%}
+    {%- assign date_full = parts[0] -%}
+    {%- assign text = parts[1] -%}
+    {%- assign url = parts[2] -%}
+    {%- assign link_text = parts[3] -%}
+    {%- assign year = date_full | slice: 0, 4 -%}
+    {%- assign month_num = date_full | slice: 5, 2 -%}
+    {%- assign day = date_full | slice: 8, 2 -%}
     {%- assign months = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" | split: "," -%}
     {%- assign month_label = months[month_num | minus: 1] -%}
     <div class="news-flex-item">
       <div class="news-date-col">
-        <div class="news-month">{{ month_label }}</div>
-        <div class="news-year">{{ year }}</div>
+        <div class="news-day">{{ day }}</div>
+        <div class="news-month-year">{{ year }}.{{ month_num }}</div>
       </div>
       <div class="news-content-col">
-        {{ parts[2] }}
-        {% if parts[3] and parts[3] != "" %}
-          <a class="news-details-link" href="{{ parts[3] }}" target="_blank">
-            {{ parts[4] | default: '[Details]' }}
+        {{ text }}
+        {% if url and url != "" %}
+          <a class="news-details-link" href="{{ url }}" target="_blank">
+            {{ link_text | default: '[Details]' }}
           </a>
         {% endif %}
       </div>
