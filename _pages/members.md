@@ -97,7 +97,7 @@ h2.section-title {
   <img src="{{ m.image }}" alt="{{ m.name }}" class="member-photo">
   <div>
     <div style="font-size:1.2em; font-weight:600; margin-bottom:10px;">
-      {{ m.name }}
+      <span style="margin-left:10px;">{{ m.name }}</span>
       {% if m.website %}
         <a href="{{ m.website }}" target="_blank" title="Website" style="color:#888; display:inline-block; margin-right:4px;">
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><circle cx="10" cy="10" r="8"/><line x1="2" y1="10" x2="18" y2="10"/><path d="M10 2a13 13 0 0 1 0 16M10 2a13 13 0 0 0 0 16"/></svg>
@@ -129,8 +129,8 @@ h2.section-title {
       </div>
     {% endif %}
     {% if m.education %}
-      <div style="margin-bottom:10px; margin-left:0px;">
-        <strong>Education</strong>
+      <div style="margin-bottom:10px;">
+        <strong style="margin-left:10px;">Education</strong>
         <ul>
         {% for ed in m.education %}
           <li>{{ ed }}</li>
@@ -139,8 +139,8 @@ h2.section-title {
       </div>
     {% endif %}
     {% if m.affiliations %}
-      <div style="margin-bottom:10px; margin-left:0px;">
-        <strong>Career</strong>
+      <div style="margin-bottom:10px;">
+        <strong style="margin-left:10px;">Career</strong>
         <ul>
         {% for aff in m.affiliations %}
           <li>{{ aff }}</li>
@@ -150,7 +150,7 @@ h2.section-title {
     {% endif %}
     {% if m.awards %}
       <div style="margin-bottom:10px;margin-left:0px;">
-        <strong>Honors & Awards</strong>
+        <strong style="margin-left:10px;">Honors & Awards</strong>
         <ul>
         {% for a in m.awards %}
           <li>{{ a }}</li>
