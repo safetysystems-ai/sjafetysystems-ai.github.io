@@ -144,7 +144,7 @@ permalink: /projects/
   position: relative;
   z-index: 2;
   color: #fff;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
   margin-left: 5vw;   /* 왼쪽 정렬, 값 조절 가능 */
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
