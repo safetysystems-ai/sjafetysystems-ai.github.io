@@ -43,8 +43,8 @@ permalink: /publications/
 <div style="padding:44px 0 0 0;">
   <div class="pub-cat-btns">
     <button class="pub-cat-btn active" onclick="showPubs('all')">All Papers</button>
-    <button class="pub-cat-btn" onclick="showPubs('journal')">Peer-reviewed Journal Publications</button>
-    <button class="pub-cat-btn" onclick="showPubs('conference')">Peer-reviewed Conference Publications</button>
+    <button class="pub-cat-btn" onclick="showPubs('journal')">Refereed Journal Articles</button>
+    <button class="pub-cat-btn" onclick="showPubs('conference')">Refereed Conference Proceedings</button>
   </div>
 
   <!-- All Papers List -->
