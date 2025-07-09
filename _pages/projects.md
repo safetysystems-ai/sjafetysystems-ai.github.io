@@ -44,6 +44,16 @@ permalink: /projects/
   justify-items: center; /* 카드 가운데 정렬 */
   justify-content: start; /* 전체 컨테이너 왼쪽 정렬 */
 }
+
+/* 이 클래스는 Completed Projects만 씀 */
+.project-grid-left {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  justify-items: start; /* 항상 왼쪽 정렬 */
+  justify-content: start;
+}
+  
 .project-card {
   width: 320px;
   background: #fff;
@@ -107,7 +117,7 @@ permalink: /projects/
 <!-- Project in Progress Section -->
 <div class="project-section-bg">
   <div class="project-inner-container">
-    <h2 style="font-size:1.7em; font-weight:600; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Project in Progress
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
@@ -137,11 +147,11 @@ permalink: /projects/
 <!-- Completed Projects Section -->
 <div class="project-section-bg-completed">
   <div class="project-inner-container">
-    <h2 style="font-size:1.7em; font-weight:600; margin-bottom:18px; margin-left:3px;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; margin-left:3px;">
       Completed Projects
     </h2>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
-    <div class="project-grid">
+    <div class="project-grid-left">
       {% assign completed_projects = site.projects | where: "status", "completed" %}
       {% for project in completed_projects %}
         <a href="{{ project.url }}" class="project-card">
