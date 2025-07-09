@@ -9,7 +9,7 @@ header:
   actions:
     - label: "Learn More"
       url: "/about/"
-excerpt: "Safety Systems AI (SSAI) Lab"
+excerpt: "Safety Systems.AI (SSAI) Lab"
 ---
 
 <style>
