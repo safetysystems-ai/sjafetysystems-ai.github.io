@@ -140,8 +140,8 @@ html {
 <div style="max-width:950px; margin:0 auto; display:flex; flex-direction:column; align-items:center;">
   <img src="/assets/images/Logo_full_Blue.png"
         alt="Safety Systems AI Lab Logo"
-        style="width:900px; max-width:98vw; height:auto; margin-bottom:22px;" />
-  <div style="font-size:1.15em; color:#3d4853; font-weight:500; text-align:center; max-width:800px; margin-bottom:8px;">
+        style="width:900px; max-width:98vw; height:auto; margin-bottom:22px; margin-top:22px;" />
+  <div style="font-size:1.14em; color:#3d4853; font-weight:600; text-align:center; max-width:800px; margin-bottom:10px;">
     Augmenting the Human Cognitive and Physical Capabilities for Safety
   </div>
   <div style="font-size:1.07em; color:#61697a; text-align:center; max-width:900px;margin-bottom:40px;">
@@ -188,7 +188,7 @@ html {
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
       Recent News
     </h2>
-    <ul style="font-size:0.8em; color:#262626; margin-bottom:18px; padding-left:18px;">
+    <ul style="font-size:0.9em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {%- assign all_news = "" | split: "" -%}
       {%- for year in site.data.news -%}
         {%- for item in year.items -%}
