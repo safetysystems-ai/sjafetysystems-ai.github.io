@@ -114,13 +114,13 @@ h2.section-title {
   color: #fff;
   font-size: 2.5em;
   font-weight: 700;
-  margin-right: 7vw;
-  margin-left: auto;      /* 왼쪽 여백 없이 */
+  margin-right: auto;
+  margin-left: 7v;      
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;   /* 오른쪽 정렬 */
+  justify-content: flex-start;   
   width: 100%;
   height: 100%;
   text-align: left;
