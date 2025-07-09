@@ -140,7 +140,7 @@ html {
 <div style="max-width:950px; margin:0 auto; display:flex; flex-direction:column; align-items:center;">
   <img src="/assets/images/Logo_full_Blue.png"
         alt="Safety Systems AI Lab Logo"
-        style="width:900px; max-width:98vw; height:auto; margin-bottom:22px; margin-top:22px;" />
+        style="width:900px; max-width:98vw; height:auto; margin-bottom:22px; margin-top:50px;"/>
   <div style="font-size:1.14em; color:#3d4853; font-weight:600; text-align:center; max-width:800px; margin-bottom:10px;">
     Augmenting the Human Cognitive and Physical Capabilities for Safety
   </div>
