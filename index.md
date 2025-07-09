@@ -166,27 +166,31 @@ html {
 
 <!-- Recent News Section (Main Page) -->
 <div class="recent-news-section" style="background:#fff; padding:15px 0 32px 0; margin:0;">
-  <div style="max-width:1000px; margin:0 auto; border:none;">
+  <div style="max-width:1000px; margin:0 auto;">
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
       Recent News
     </h2>
     <ul style="font-size:0.8em; color:#262626; margin-bottom:18px; padding-left:18px;">
-      {% assign news2025 = site.data.news | where: "year", 2025 %}
-      {% for year in news2025 %}
-        {% for item in year.items %}
-          <li style="margin-bottom:7px; line-height:1.65;">
-            {% if item.date %}
-              <b>{{ item.date }}</b>&nbsp;
-            {% endif %}
-            {{ item.text }}
-            {% if item.url %}
-              <a href="{{ item.url }}" target="_blank" style="color:#225; margin-left:7px;">{{ item.link_text | default: "[Link]" }}</a>
-            {% endif %}
-          </li>
-        {% endfor %}
-      {% endfor %}
+      {%- assign all_news = "" | split: "" -%}
+      {%- for year in site.data.news -%}
+        {%- for item in year.items -%}
+          {%- assign _item = item | merge: {"year": year.year} -%}
+          {%- assign all_news = all_news | push: _item -%}
+        {%- endfor -%}
+      {%- endfor -%}
+      {%- assign all_news = all_news | sort: "order" | reverse -%}
+      {%- for item in all_news limit:4 -%}
+        <li style="margin-bottom:7px; line-height:1.65;">
+          {% if item.date %}
+            <b>{{ item.date }}</b>&nbsp;
+          {% endif %}
+          {{ item.text }}
+          {% if item.url %}
+            <a href="{{ item.url }}" target="_blank" style="color:#225; margin-left:7px;">{{ item.link_text | default: "[Link]" }}</a>
+          {% endif %}
+        </li>
+      {%- endfor -%}
     </ul>
-    <!-- View all news link: 추가 위치 여기!! -->
     <div style="text-align:center; margin-bottom:4px;">
       <a href="/news/" style="font-size:1.05em; color:#222; text-decoration:underline; font-weight:600;">View all news</a>
     </div>
