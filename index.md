@@ -287,7 +287,7 @@ html {
   <!-- 지도 -->
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.3265252776173!2d-96.34143144218953!3d30.61550314807618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86468399d9df49cb%3A0x9841ee504f247ca6!2sNagle%20Hall%2C%20454%20Throckmorton%20St%2C%20College%20Station%2C%20TX%2077843!5e0!3m2!1sen!2sus!4v1751918635059!5m2!1sen!2sus"
-    width="480"
+    width="320"
     height="320"
     style="border:0; border-radius: 14px;"
     allowfullscreen=""
@@ -301,20 +301,37 @@ html {
        style="width: 240px; height:auto; margin-top: 32px; margin-bottom: 5px;" />
 
   <!-- Join Us Button -->
-  <div class="joinus-btn-wrap">
-    <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration:none;">
-      <button class="joinus-btn" type="button" tabindex="0">
-        <div class="joinus-btn-bg">
-          <div class="joinus-btn-box">
-            <svg width="28" height="28" stroke="#3d4853" fill="none" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="14" cy="14" r="11.5"/>
-              <polyline points="12,10 16,14 12,18"/>
-            </svg>
-          </div>
-          <span class="joinus-btn-label">Join us</span>
-        </div>
-      </button>
-    </a>
-  </div>
-</div>
-</div>
+  <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration: none;">
+    <div style="
+      display: flex;
+      align-items: center;
+      padding: 0 34px 0 14px;
+      background: #3d4853;
+      color: #fff;
+      border-radius: 26px;
+      height: 54px;
+      min-width: 160px;
+      font-size: 1.18em;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(30,30,60,0.12);
+      transition: background 0.17s, box-shadow 0.17s;
+      cursor: pointer;
+      gap: 18px;
+      margin-bottom: 8px;"
+      onmouseover="this.style.background='#30407a'; this.style.boxShadow='0 6px 28px #b3c2f5';"
+      onmouseout="this.style.background='#3d4853'; this.style.boxShadow='0 2px 12px rgba(30,30,60,0.12)';"
+    >
+      <div style="
+        width: 38px; height: 38px; border-radius: 14px; background: #fff;
+        display: flex; align-items: center; justify-content: center; margin-right: 12px;">
+        <svg width="22" height="22" stroke='#19213b' fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="9"/>
+          <polyline points="9,7 13,11 9,15"/>
+        </svg>
+      </div>
+      <span>Join us</span>
+    </div>
+  </a>
+  </div> <!-- 지도+로고+버튼 묶음 끝 -->
+</div>   <!-- Contact Us 내부 flex 컨테이너 끝 -->
+</div>   <!-- Contact Us Section 전체 끝 -->
