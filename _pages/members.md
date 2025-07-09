@@ -31,6 +31,7 @@ h2.section-title {
   text-align: center;
   margin-left: 0;
   margin-bottom: 38px;
+  font-size: 1.5em;
 }
 
 .member-list-container {
@@ -113,7 +114,7 @@ h2.section-title {
   color: #fff;
   font-size: 2.5em;
   font-weight: 700;
-  margin-left: 5vw;
+  margin-right: 5vw;
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
   letter-spacing: 1px;
 }
@@ -126,7 +127,7 @@ h2.section-title {
 
 <div class="members-header-image">
   <div class="members-header-overlay"></div>
-  <div class="members-header-text members-header-text-right">
+  <div class="members-header-text">
     <span>Members</span>
   </div>
 </div>
