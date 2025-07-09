@@ -114,15 +114,22 @@ h2.section-title {
   color: #fff;
   font-size: 2.5em;
   font-weight: 700;
-  margin-left: 5vw;
+  margin-right: 7vw;
+  margin-left: auto;      /* 왼쪽 여백 없이 */
   text-shadow: 0 2px 16px rgba(0,0,0,0.14);
-  align-items: right;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;   /* 오른쪽 정렬 */
+  width: 100%;
+  height: 100%;
+  text-align: right;
 }
 @media (max-width: 800px) {
   .members-header-image { height: 180px; }
-  .members-header-text { font-size: 1.8em; margin-left: 18px;}
+  .members-header-text { font-size: 1.7em; margin-right: 18px;}
 }
+
   
 </style>
 
