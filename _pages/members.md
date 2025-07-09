@@ -96,7 +96,7 @@ h2.section-title {
 <div class="member-flex">
   <img src="{{ m.image }}" alt="{{ m.name }}" class="member-photo">
   <div>
-    <div style="font-size:1.5em; font-weight:600; margin-bottom:10px;">
+    <div style="font-size:1.2em; font-weight:600; margin-bottom:10px;">
       {{ m.name }}
       {% if m.website %}
         <a href="{{ m.website }}" target="_blank" title="Website" style="color:#888; display:inline-block; margin-right:4px;">
@@ -120,7 +120,7 @@ h2.section-title {
       {% endif %}
     </div>
     {% if m.positions %}
-      <div style="margin-bottom:10px; margin-left:20px;">
+      <div style="margin-bottom:10px; margin-left:0px;">
         <ul>
         {% for pos in m.positions %}
           <li>{{ pos }}</li>
@@ -129,7 +129,7 @@ h2.section-title {
       </div>
     {% endif %}
     {% if m.education %}
-      <div style="margin-bottom:10px; margin-left:20px;">
+      <div style="margin-bottom:10px; margin-left:0px;">
         <strong>Education</strong>
         <ul>
         {% for ed in m.education %}
@@ -139,7 +139,7 @@ h2.section-title {
       </div>
     {% endif %}
     {% if m.affiliations %}
-      <div style="margin-bottom:10px; margin-left:20px;">
+      <div style="margin-bottom:10px; margin-left:0px;">
         <strong>Career</strong>
         <ul>
         {% for aff in m.affiliations %}
@@ -149,7 +149,7 @@ h2.section-title {
       </div>
     {% endif %}
     {% if m.awards %}
-      <div style="margin-bottom:10px;margin-left:20px;">
+      <div style="margin-bottom:10px;margin-left:0px;">
         <strong>Honors & Awards</strong>
         <ul>
         {% for a in m.awards %}
