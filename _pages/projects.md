@@ -41,7 +41,7 @@ permalink: /projects/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
-  justify-items: center; /* 카드 가운데 정렬 */
+  justify-items: start; /* 카드 가운데 정렬 */
   justify-content: start; /* 전체 컨테이너 왼쪽 정렬 */
 }
 
