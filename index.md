@@ -4,15 +4,17 @@ title: "AI-Powered
 Safety Systems 
 Research"
 header:
-  overlay_image: /assets/images/Asset_22.png   # 사용하고 싶은 이미지 경로
-  overlay_filter: 0.2           # 어두운 효과(0~1), 원하면 조정
+  overlay_image: /assets/images/Asset_22.png
+  overlay_filter: 0.2
   actions:
     - label: "Learn More"
-      url: "/about/"
+      url: "#about"
 excerpt: "Safety Systems.AI (SSAI) Lab"
 ---
 
 <style>
+/* 기존 스타일 그대로 사용, 추가 스타일은 필요시 조정 */
+
 .project-card,
 .project-card *,
 .project-card a {
@@ -67,7 +69,7 @@ excerpt: "Safety Systems.AI (SSAI) Lab"
   height: 120px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
-  background: #f7f7f7; /* Optional: subtle bg for transparent logos */
+  background: #f7f7f7;
 }
 .project-card-content {
   padding: 18px 18px 8px 18px;
@@ -120,21 +122,37 @@ html {
   margin-right: -50vw;
   padding: 60px 0 80px 0;
 }
-
+/* About 섹션 구분선용 (필요시 추가) */
+.about-section-bg {
+  background: #fff;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 56px 0 34px 0;
+}
 </style>
 
-<!-- Projects Section (Main Page) -->
+<!-- About Section (Main Page, 풀로고+미션/소개) -->
+<div id="about" class="about-section-bg">
+  <div style="max-width:900px; margin:0 auto; display:flex; flex-direction:column; align-items:center;">
+    <img src="/assets/images/Logo_full_Blue.png"
+         alt="Safety Systems AI Lab Logo"
+         style="width:520px; max-width:96vw; height:auto; margin-bottom:22px;" />
+    <div style="font-size:1.28em; color:#3d4853; font-weight:500; text-align:center; max-width:700px; margin-bottom:8px;">
+      Build Trustworthy AI Generalists for Critical Applications at Scale
+    </div>
+    <div style="font-size:1.07em; color:#61697a; text-align:center; max-width:700px;">
+      <em>We innovate next-generation AI safety systems for complex, real-world environments, empowering safe, scalable, and responsible AI adoption across industries.</em>
+    </div>
+  </div>
+</div>
+
+<!-- Research Projects Section (Main Page) -->
 <div class="project-section-bg">
   <div class="project-inner-container" style="display:flex; flex-direction:column; align-items:center;">
-
-    <!-- 로고 삽입부 START -->
-    <div style="display:flex; justify-content:center; align-items:center; margin-bottom:28px; width:100%;">
-      <img src="/assets/images/Logo_full_Blue.png"
-           alt="Safety Systems AI Lab Logo"
-           style="width:900px; max-width:98vw; height:auto;" />
-    </div>
-    <!-- 로고 삽입부 END -->
-
     <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center; width:100%;">
       Research Projects
     </h2>
@@ -196,7 +214,6 @@ html {
     </div>
   </div>
 </div>
-
 
 <!-- Contact Us Section (with Lab Logo & Join Us Button 바로 아래에) -->
 <div id="contact" class="contact-section-bg" style="padding-bottom: 0;">
