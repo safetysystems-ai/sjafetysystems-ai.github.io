@@ -146,7 +146,7 @@ h2.section-title {
 <div class="member-flex">
   <img src="{{ m.image }}" alt="{{ m.name }}" class="member-photo">
   <div>
-    <div style="font-size:1.2em; font-weight:600; margin-bottom:10px;">
+    <div style="font-size:1.1em; font-weight:600; margin-bottom:10px;">
       <span style="margin-left:10px;">{{ m.name }}</span>
       {% if m.website %}
         <a href="{{ m.website }}" target="_blank" title="Website" style="color:#888; display:inline-block; margin-right:4px;">
