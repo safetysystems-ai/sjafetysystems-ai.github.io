@@ -56,6 +56,10 @@ permalink: /news/
   font-size: 0.98em;
 }
 @media (max-width: 650px) {
+  .news-flex-list {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .news-flex-item { flex-direction: column; padding: 20px 0 14px 0;}
   .news-date-col { flex-direction: row; width: 100%; margin-bottom: 8px;}
   .news-day { font-size: 1.5em; margin-bottom:0; margin-right: 16px;}
