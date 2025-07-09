@@ -136,7 +136,7 @@ html {
 .joinus-btn-bg {
   display: flex;
   align-items: center;
-  background: #3d4853;  /* 변경: 그레이 */
+  background: #3d4853;  /* 기본 그레이 */
   border-radius: 32px;
   height: 54px;
   transition: background 0.25s;
@@ -171,14 +171,14 @@ html {
   background: #fff;
 }
 .joinus-btn:hover .joinus-btn-label {
-  color: #3d4853; /* 변경: hover시 글씨색상 */
+  color: #3d4853; /* hover 시 글씨색 변경 */
 }
 .joinus-btn:hover .joinus-btn-bg {
-  background: #fff;
+  background: #3d4853; /* hover해도 전체 배경은 그레이 유지 */
   box-shadow: 0 6px 28px #d1d5db;
 }
 .joinus-btn svg {
-  stroke: #3d4853; /* 변경: 화살표색 */
+  stroke: #3d4853;
   transition: stroke 0.2s;
 }
 @media (max-width: 600px) {
@@ -287,8 +287,8 @@ html {
       <!-- 지도 -->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4083.3265252776173!2d-96.34143144218953!3d30.61550314807618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86468399d9df49cb%3A0x9841ee504f247ca6!2sNagle%20Hall%2C%20454%20Throckmorton%20St%2C%20College%20Station%2C%20TX%2077843!5e0!3m2!1sen!2sus!4v1751918635059!5m2!1sen!2sus"
-        width="270"
-        height="270"
+        width="320"
+        height="320"
         style="border:0; border-radius: 14px;"
         allowfullscreen=""
         loading="lazy"
@@ -298,7 +298,7 @@ html {
       <!-- 연구실 로고 -->
       <img src="/assets/images/Logo_Blue.png"
            alt="SSAI Lab Logo"
-           style="width: 120px; height:auto; margin-bottom:0;" />
+           style="width: 240px; height:auto; margin-bottom:0;" />
 
       <!-- Join Us Button -->
       <div class="joinus-btn-wrap">
