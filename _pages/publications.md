@@ -66,7 +66,6 @@ permalink: /publications/
   {% endfor %}
   {% for pub in all_confs %}
     <li>
-      {{ forloop.index | plus: all_journals.size }}. 
       {{ pub.authors | replace: 'Kim, N.', '<b>Kim, N.</b>' }} ({{ pub.year }}).
       “{{ pub.title }}”
       {{ pub.conference }}
