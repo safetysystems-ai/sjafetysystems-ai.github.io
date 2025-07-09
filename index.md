@@ -227,3 +227,46 @@ html {
     </div>
   </div>
 </div>
+
+
+<!-- 연구실 로고 & Join Us 버튼 Section -->
+<div style="display: flex; flex-direction: column; align-items: center; margin-top: 36px; margin-bottom: 12px;">
+  <!-- 연구실 로고 -->
+  <img src="/assets/images/Logo_Blue.png"
+       alt="SSAI Lab Logo"
+       style="width: 140px; height:auto; margin-bottom: 18px;" />
+
+  <!-- Join Us Button -->
+  <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration: none;">
+    <div style="
+      display: flex;
+      align-items: center;
+      padding: 0 34px 0 14px;
+      background: #19213b;
+      color: #fff;
+      border-radius: 26px;
+      height: 60px;
+      min-width: 180px;
+      font-size: 1.25em;
+      font-weight: 600;
+      box-shadow: 0 2px 12px rgba(30,30,60,0.12);
+      transition: background 0.17s, box-shadow 0.17s;
+      cursor: pointer;
+      gap: 22px;
+      margin-bottom: 8px;
+    "
+    onmouseover="this.style.background='#30407a'; this.style.boxShadow='0 6px 28px #b3c2f5';"
+    onmouseout="this.style.background='#19213b'; this.style.boxShadow='0 2px 12px rgba(30,30,60,0.12)';"
+    >
+      <div style="
+        width:46px; height:46px; border-radius:14px; background:#fff;
+        display:flex; align-items:center; justify-content:center; margin-right:12px;">
+        <svg width="26" height="26" stroke="#222e4d" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="13" cy="13" r="11.5"/>
+          <polyline points="11,9 15,13 11,17"/>
+        </svg>
+      </div>
+      <span>Join us</span>
+    </div>
+  </a>
+</div>
