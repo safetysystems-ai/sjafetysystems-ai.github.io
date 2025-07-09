@@ -136,7 +136,7 @@ html {
 </style>
 
 <!-- About Section (Main Page, 풀로고+미션/소개) -->
-<div id="about" class="about-section-bg">
+<div id="about" class="about-section-bg" style="scroll-margin-top: 90px;">
   <div style="max-width:950px; margin:0 auto; display:flex; flex-direction:column; align-items:center;">
     <img src="/assets/images/Logo_full_Blue.png"
          alt="Safety Systems AI Lab Logo"
