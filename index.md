@@ -120,7 +120,73 @@ html {
   margin-right: -50vw;
   padding: 60px 0 80px 0;
 }
-   
+
+.joinus-btn-wrap {
+  display: flex; flex-direction: column; align-items: center; margin-top: 2px;
+}
+.joinus-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  outline: none;
+}
+.joinus-btn-bg {
+  display: flex;
+  align-items: center;
+  background: #3d4853;  /* 변경: 그레이 */
+  border-radius: 32px;
+  height: 54px;
+  transition: background 0.25s;
+  padding-right: 24px;
+  padding-left: 6px;
+  box-shadow: 0 2px 12px rgba(30,30,60,0.11);
+  position: relative;
+  min-width: 156px;
+}
+.joinus-btn-box {
+  width: 38px; height: 38px;
+  background: #F4F4F4;
+  border-radius: 14px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.28s cubic-bezier(.8,0,.2,1);
+  z-index: 2;
+}
+.joinus-btn-label {
+  font-size: 1.13em;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.01em;
+  transition: color 0.28s cubic-bezier(.8,0,.2,1);
+}
+.joinus-btn:hover .joinus-btn-box {
+  width: 100%;
+  border-radius: 32px;
+  margin-right: 0;
+  background: #fff;
+}
+.joinus-btn:hover .joinus-btn-label {
+  color: #3d4853; /* 변경: hover시 글씨색상 */
+}
+.joinus-btn:hover .joinus-btn-bg {
+  background: #fff;
+  box-shadow: 0 6px 28px #d1d5db;
+}
+.joinus-btn svg {
+  stroke: #3d4853; /* 변경: 화살표색 */
+  transition: stroke 0.2s;
+}
+@media (max-width: 600px) {
+  .joinus-btn-bg { height: 44px; min-width: 100px; }
+  .joinus-btn-box { width: 26px; height: 26px; border-radius: 8px;}
+  .joinus-btn-label { font-size: 0.97em; }
+}
+
 </style>
 
 <!-- Projects Section (Main Page) -->
@@ -235,39 +301,21 @@ html {
            style="width: 120px; height:auto; margin-bottom:0;" />
 
       <!-- Join Us Button -->
-      <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration: none;">
-        <div style="
-          display: flex;
-          align-items: center;
-          padding: 0 32px 0 12px;
-          background: #19213b;
-          color: #fff;
-          border-radius: 26px;
-          height: 54px;
-          min-width: 156px;
-          font-size: 1.15em;
-          font-weight: 600;
-          box-shadow: 0 2px 12px rgba(30,30,60,0.12);
-          transition: background 0.17s, box-shadow 0.17s;
-          cursor: pointer;
-          gap: 18px;
-          margin-bottom: 0;
-        "
-        onmouseover="this.style.background='#30407a'; this.style.boxShadow='0 6px 28px #b3c2f5';"
-        onmouseout="this.style.background='#19213b'; this.style.boxShadow='0 2px 12px rgba(30,30,60,0.12)';"
-        >
-          <div style="
-            width:38px; height:38px; border-radius:12px; background:#fff;
-            display:flex; align-items:center; justify-content:center; margin-right:12px;">
-            <svg width="20" height="20" stroke="#222e4d" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="10" cy="10" r="9"/>
-              <polyline points="8,6 12,10 8,14"/>
-            </svg>
-          </div>
-          Join us
-        </div>
-      </a>
-    </div>
+      <div class="joinus-btn-wrap">
+        <a href="https://forms.gle/your-google-form-link" target="_blank" style="text-decoration:none;">
+          <button class="joinus-btn" type="button" tabindex="0">
+            <div class="joinus-btn-bg">
+              <div class="joinus-btn-box">
+                <svg width="28" height="28" stroke="#3d4853" fill="none" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="14" cy="14" r="11.5"/>
+                  <polyline points="12,10 16,14 12,18"/>
+                </svg>
+              </div>
+              <span class="joinus-btn-label">Join us</span>
+            </div>
+          </button>
+        </a>
+      </div>
     <!-- 지도 + 로고 + 버튼 묶음 끝 -->
   </div>
 </div>
