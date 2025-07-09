@@ -64,6 +64,32 @@ permalink: /news/
 }
 </style>
 
+<!-- News Header Section -->
+<div style="
+  position: relative; 
+  width: 100vw; 
+  left: 50%; 
+  right: 50%; 
+  margin-left: -50vw; 
+  margin-right: -50vw;
+  height: 280px;
+  overflow: hidden;">
+  <img src="/assets/images/Academic_Sunset.jpg" alt="News Banner" 
+    style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);" />
+  <div style="
+    position: absolute; 
+    top: 52%; left: 6vw; 
+    transform: translateY(-50%);
+    color: #fff; 
+    font-size: 2.6em; 
+    font-weight: 800; 
+    text-shadow: 0 3px 16px rgba(0,0,0,0.30);
+    letter-spacing: 0.01em;">
+    News
+  </div>
+</div>
+
+
 <h2 style="font-size:1.5em; font-weight:700; margin-bottom:24px; text-align:center;">
   News and Updates
 </h2>
