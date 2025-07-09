@@ -120,12 +120,12 @@ html {
   margin-right: -50vw;
   padding: 60px 0 80px 0;
 }
+  
 .section-title {
   font-size: 1.5em;
   font-weight: 600;
   text-align: center;
   margin-bottom: 8px;
-  color: #999;
   margin-left: 0;
 }
 
