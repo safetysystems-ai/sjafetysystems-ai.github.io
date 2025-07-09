@@ -117,9 +117,10 @@ permalink: /projects/
 <!-- Project in Progress Section -->
 <div class="project-section-bg">
   <div class="project-inner-container">
-    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;color: #500000;">
       Project in Progress
     </h2>
+    <div class="section-title-underline"><span></span></div>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid">
       {% assign ongoing_projects = site.projects | where: "status", "ongoing" %}
@@ -147,9 +148,10 @@ permalink: /projects/
 <!-- Completed Projects Section -->
 <div class="project-section-bg-completed">
   <div class="project-inner-container">
-    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;color: #500000;">
       Completed Projects
     </h2>
+    <div class="section-title-underline"><span></span></div>
     <div style="margin-bottom:38px; margin-left:3px;"></div>
     <div class="project-grid-left">
       {% assign completed_projects = site.projects | where: "status", "completed" %}
