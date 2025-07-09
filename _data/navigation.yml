@@ -1,7 +1,7 @@
 # main links
 # _data/navigation.yml
 main:
-  - title: "Projects"
+  - title: "Research"
     url: /projects/
   - title: "People"
     url: /people/
