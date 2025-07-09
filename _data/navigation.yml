@@ -2,7 +2,7 @@
 # _data/navigation.yml
 main:
   - title: "Research"
-    url: /projects/
+    url: /research/
   - title: "People"
     url: /people/
   - title: "Publications"
