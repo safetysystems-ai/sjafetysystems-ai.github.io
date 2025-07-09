@@ -23,14 +23,14 @@ permalink: /projects/
 }
 .project-section-bg-completed {
   background: #faf9f8;
-  min-height: 60vh;
+  min-height: unset;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 30px 0 30px 0;
+  padding: 30px 0 10px 0;
 }
 .project-inner-container {
   max-width: 1200px;
