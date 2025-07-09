@@ -185,8 +185,10 @@ html {
 <!-- Recent News Section (Main Page) -->
 <div class="recent-news-section" style="background:#fff; padding:15px 0 32px 0; margin:0;">
   <div style="max-width:1000px; margin:0 auto;">
-    <h2 class="section-title">Recent News</h2>
-    <!-- <span class="section-underline"></span> -->
+    <h2 style="font-size:1.5em; font-weight:600; margin-bottom:18px; text-align:center;">
+      Recent News
+    </h2>
+    <span class="section-underline"></span>
     <ul style="font-size:0.8em; color:#262626; margin-bottom:18px; padding-left:18px;">
       {% assign news2025 = site.data.news | where: "year", 2025 %}
       {% for year in news2025 %}
