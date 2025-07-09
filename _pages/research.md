@@ -100,10 +100,22 @@ permalink: /research/
   letter-spacing: 0.01em;
 }
 @media (max-width: 850px) {
-  .project-inner-container { max-width: 95vw; }
-  .project-card { width: 96vw; max-width: 380px;}
+  .project-inner-container { max-width: 98vw; padding: 0 1vw; }
+  .project-card { width: 97vw; max-width: 380px;}
 }
-
+@media (max-width: 600px) {
+  .project-inner-container { max-width: 100vw; padding: 0 2vw; }
+  .project-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+    justify-items: center !important;
+    justify-content: center !important;
+  }
+  .project-card {
+    width: 99vw;
+    max-width: 99vw;
+  }
+}
 .section-title {
   text-align: center;
   color: inherit;
