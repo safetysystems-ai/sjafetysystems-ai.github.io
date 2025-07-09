@@ -177,7 +177,7 @@ html {
       {% endfor %}
     </div>
     <div style="text-align:center; margin-top:30px;">
-      <a href="/projects/" style="color:#222; font-weight:600; font-size:1.05em; text-decoration:underline;">View all projects</a>
+      <a href="/research/" style="color:#222; font-weight:600; font-size:1.05em; text-decoration:underline;">View all projects</a>
     </div>
   </div>
 </div>
@@ -268,7 +268,7 @@ html {
       transition: background 0.17s, box-shadow 0.17s;
       cursor: pointer;
       gap: 18px;
-      margin-bottom: 8px;"
+      margin-bottom: 50px;"
       onmouseover="this.style.background='#30407a'; this.style.boxShadow='0 6px 28px #b3c2f5';"
       onmouseout="this.style.background='#3d4853'; this.style.boxShadow='0 2px 12px rgba(30,30,60,0.12)';"
     >
