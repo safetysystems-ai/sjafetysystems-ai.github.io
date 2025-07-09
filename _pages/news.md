@@ -62,30 +62,52 @@ permalink: /news/
   .news-month-year { font-size: 1em; }
   .news-content-col { padding-left:0; }
 }
+  .news-header-image {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 280px; /* 필요시 320px로 변경 가능 */
+  background: url('/assets/images/Academic_Sunset.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+.news-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30,30,30,0.20); /* overlay_filter: 0.2 */
+  z-index: 1;
+}
+.news-header-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-right: 7vw;
+  margin-left: auto;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.14);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+@media (max-width: 800px) {
+  .news-header-image { height: 160px; }
+  .news-header-text { font-size: 1.5em; margin-right: 14px;}
+}
 </style>
 
 <!-- News Header Section -->
-<div style="
-  position: relative; 
-  width: 100vw; 
-  left: 50%; 
-  right: 50%; 
-  margin-left: -50vw; 
-  margin-right: -50vw;
-  height: 280px;
-  overflow: hidden;">
-  <img src="/assets/images/Academic_Sunset.jpg" alt="News Banner" 
-    style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7);" />
-  <div style="
-    position: absolute; 
-    top: 52%; left: 6vw; 
-    transform: translateY(-50%);
-    color: #fff; 
-    font-size: 2.6em; 
-    font-weight: 800; 
-    text-shadow: 0 3px 16px rgba(0,0,0,0.30);
-    letter-spacing: 0.01em;">
-    News
+<div class="news-header-image">
+  <div class="news-header-overlay"></div>
+  <div class="news-header-text">
+    <span>News</span>
   </div>
 </div>
 
